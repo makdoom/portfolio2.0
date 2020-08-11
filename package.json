@@ -16,5 +16,8 @@
     "@babel/runtime-corejs2": "^7.11.2",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "skroller": "^0.2.0"
   }
 }

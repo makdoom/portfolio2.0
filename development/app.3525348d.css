@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
-$primary_background: #262626;
-$primary_color: #51ffff;
-
 * {
   margin: 0;
   padding: 0;
@@ -33,11 +30,10 @@ body {
   width: 400vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-
-  .slide {
-    width: 100vw;
-    height: 100vh;
-  }
+}
+.container .slide {
+  width: 100vw;
+  height: 100vh;
 }
 
 .home {
@@ -66,9 +62,12 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .container {
     display: flex;
     flex-direction: column;
     transform: none !important;
   }
 }
+
+/*# sourceMappingURL=/app.3525348d.css.map */
