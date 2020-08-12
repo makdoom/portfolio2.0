@@ -17,7 +17,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 164,
+        value: 100,
         density: {
           enable: true,
           value_area: 800,
@@ -28,13 +28,7 @@ particlesJS(
       },
       shape: {
         type: "circle",
-        stroke: {
-          width: 2,
-          color: "#02fff0",
-        },
-        polygon: {
-          nb_sides: 5,
-        },
+
         image: {
           src: "img/github.svg",
           width: 100,
@@ -42,7 +36,7 @@ particlesJS(
         },
       },
       opacity: {
-        value: 0.5,
+        value: 1,
         random: false,
         anim: {
           enable: false,
@@ -70,7 +64,7 @@ particlesJS(
       },
       move: {
         enable: true,
-        speed: 6,
+        speed: 3,
         direction: "none",
         random: false,
         straight: false,

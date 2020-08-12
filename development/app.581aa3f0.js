@@ -134,7 +134,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 164,
+      value: 100,
       density: {
         enable: true,
         value_area: 800
@@ -145,13 +145,6 @@ particlesJS("particles-js", {
     },
     shape: {
       type: "circle",
-      stroke: {
-        width: 2,
-        color: "#02fff0"
-      },
-      polygon: {
-        nb_sides: 5
-      },
       image: {
         src: "img/github.svg",
         width: 100,
@@ -159,7 +152,7 @@ particlesJS("particles-js", {
       }
     },
     opacity: {
-      value: 0.5,
+      value: 1,
       random: false,
       anim: {
         enable: false,
@@ -187,7 +180,7 @@ particlesJS("particles-js", {
     },
     move: {
       enable: true,
-      speed: 6,
+      speed: 3,
       direction: "none",
       random: false,
       straight: false,
