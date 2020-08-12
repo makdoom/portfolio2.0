@@ -8,6 +8,9 @@ $primary_color: #51ffff;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -40,9 +43,18 @@ body {
   }
 }
 
+// #HOME SECTION
 .home {
-  background-color: red;
-  border: 2px solid red;
+  background-color: #111111;
+  color: #fff;
+
+  #particles-js {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .about {
@@ -60,6 +72,7 @@ body {
   border: 2px solid brown;
 }
 
+// #Media Queries
 @media (max-width: 991px) {
   .outer__container {
     transform: none !important;

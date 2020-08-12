@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -37,8 +41,15 @@ body {
 }
 
 .home {
-  background-color: red;
-  border: 2px solid red;
+  background-color: #111111;
+  color: #fff;
+}
+.home #particles-js {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .about {
