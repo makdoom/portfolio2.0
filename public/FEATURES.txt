@@ -3,3 +3,9 @@ about
 skill
 project
 (get in touch)
+
+
+Assignment 1
+1. Array ? relationship between arra and linked list explain
+2. single linked list ? how to create double linked list ?
+3. priority algo. how can be applied to an array ?

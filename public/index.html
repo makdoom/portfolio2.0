@@ -10,15 +10,21 @@
     <div class="navbar">
       <div class="burger">
         <div class="line"></div>
-        <!-- <div class="two"></div>
-        <div class="three"></div> -->
+      </div>
+      <div class="nav__list">
+        <ul class="list">
+          <li class="list__item"><a href="#home">Home</a></li>
+          <li class="list__item"><a href="#about">About</a></li>
+          <li class="list__item"><a href="#skills">Skills</a></li>
+          <li class="list__item"><a href="#projects">Projects</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="outer__container">
       <div class="container">
         <!-- Home Section -->
-        <div class="home slide">
+        <div class="home slide" id="home">
           <div id="particles-js"></div>
           <div class="home__content">
             <p>Nav bar</p>
@@ -26,17 +32,17 @@
         </div>
         <!-- End of Home Section -->
         <!-- about Section -->
-        <div class="about slide">
+        <div class="about slide" id="about">
           <h1>This is gonna be about page</h1>
         </div>
         <!-- End of about Section -->
         <!-- skills Section -->
-        <div class="skills slide">
+        <div class="skills slide" id="skills">
           <h1>This is gonna be skills page</h1>
         </div>
         <!-- End of skills Section -->
         <!-- Project Section -->
-        <div class="projects slide">
+        <div class="projects slide" id="projects">
           <h1>This is gonna be projects page</h1>
         </div>
 
@@ -45,6 +51,6 @@
     </div>
     <script src="../src/particles.js"></script>
     <script src="../src/app.js"></script>
-    <script src="../src/burger.js"></script>
+    <script src="../src/main.js"></script>
   </body>
 </html>

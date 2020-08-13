@@ -117,11 +117,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../src/burger.js":[function(require,module,exports) {
-var menuBtn = document.querySelector(".burger"); // let menuOpen = false
-
+})({"../src/main.js":[function(require,module,exports) {
+// Toggling Humburger
+var menuBtn = document.querySelector(".burger");
 menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
+  document.querySelector(".nav__list").classList.toggle("open");
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -151,7 +152,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56080" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54319" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -327,5 +328,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../src/burger.js"], null)
-//# sourceMappingURL=/burger.a278ef24.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../src/main.js"], null)
+//# sourceMappingURL=/main.da4909e4.js.map
