@@ -18,6 +18,7 @@
     "sass": "^1.26.10"
   },
   "dependencies": {
-    "skroller": "^0.2.0"
+    "skroller": "^0.2.0",
+    "typed.js": "^2.0.11"
   }
 }

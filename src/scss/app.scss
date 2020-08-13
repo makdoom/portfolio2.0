@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
-$primary_background: #1111;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@500&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
+$primary_background: #0000;
 $primary_color: #51ffff;
 
 * {
@@ -9,8 +9,9 @@ $primary_color: #51ffff;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  background-color: $primary_background;
 }
 
 ::-webkit-scrollbar {
@@ -215,7 +216,8 @@ body {
 
 // #HOME SECTION
 .home {
-  background: radial-gradient(circle, #383838, #000000);
+  background: #23233b;
+  // background: radial-gradient(circle, #383838, #000000);
   color: #fff;
 
   #particles-js {
@@ -229,6 +231,68 @@ body {
   .home__content {
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+
+    .header {
+      // border: 1px solid #ffff;
+      z-index: 50;
+      padding: 50px;
+      padding-left: 30px;
+
+      h1 {
+        font-size: 3.5rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-family: "Roboto mono";
+        font-weight: bold;
+      }
+      span {
+        color: cyan;
+        font-family: "Roboto mono";
+      }
+
+      button {
+        border: none;
+        outline: none;
+        background: transparent;
+        border: 2px solid $primary_color;
+        padding: 11px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: $primary_color;
+        font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0%;
+          left: 0;
+          height: 100%;
+          width: 00%;
+          background: transparent;
+          transition: all 0.3s ease-in-out;
+          border-radius: 30px;
+          transform-origin: bottom;
+          z-index: -1;
+        }
+        &:hover:before {
+          background: $primary_color;
+          width: 100%;
+        }
+        &:hover {
+          color: #000;
+          border: nones;
+        }
+      }
+    }
   }
 }
 
@@ -247,8 +311,7 @@ body {
   border: 2px solid brown;
 }
 
-// #Media Queries
-@media (max-width: 991px) {
+@media only screen and (max-width: 800px) {
   .outer__container {
     transform: none !important;
     width: 100%;
@@ -258,5 +321,8 @@ body {
     display: flex;
     flex-direction: column;
     transform: none !important;
+  }
+  .heading {
+    font-size: 1rem !important;
   }
 }

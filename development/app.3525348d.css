@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@500&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +6,9 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  background-color: #0000;
 }
 
 ::-webkit-scrollbar {
@@ -190,7 +191,7 @@ body {
 }
 
 .home {
-  background: radial-gradient(circle, #383838, #000000);
+  background: #23233b;
   color: #fff;
 }
 .home #particles-js {
@@ -203,6 +204,63 @@ body {
 .home .home__content {
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+}
+.home .home__content .header {
+  z-index: 50;
+  padding: 50px;
+  padding-left: 30px;
+}
+.home .home__content .header h1 {
+  font-size: 3.5rem;
+}
+.home .home__content .header h3 {
+  font-size: 2rem;
+  font-family: "Roboto mono";
+  font-weight: bold;
+}
+.home .home__content .header span {
+  color: cyan;
+  font-family: "Roboto mono";
+}
+.home .home__content .header button {
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid #51ffff;
+  padding: 11px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #51ffff;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.home .home__content .header button:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  transform-origin: bottom;
+  z-index: -1;
+}
+.home .home__content .header button:hover:before {
+  background: #51ffff;
+  width: 100%;
+}
+.home .home__content .header button:hover {
+  color: #000;
+  border: nones;
 }
 
 .about {
@@ -220,7 +278,7 @@ body {
   border: 2px solid brown;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 800px) {
   .outer__container {
     transform: none !important;
     width: 100%;
@@ -231,6 +289,10 @@ body {
     display: flex;
     flex-direction: column;
     transform: none !important;
+  }
+
+  .heading {
+    font-size: 1rem !important;
   }
 }
 
