@@ -1,24 +1,19 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": " rm -rf ./development && rm -rf ./.cache && parcel public/index.html --out-dir development -p 3000",
-    "build": "parcel build public/index.html --out-dir dist --public-url"
+    "dev": "parcel src/index.html -p 3000",
+    "build": "npm build src/index.html"
   },
-  "keywords": [],
   "author": "Makdoom Shaikh",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@babel/plugin-transform-runtime": "^7.11.0",
-    "@babel/runtime-corejs2": "^7.11.2",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.10"
   },
   "dependencies": {
-    "skroller": "^0.2.0",
     "typed.js": "^2.0.11"
   }
 }

@@ -1,0 +1,94 @@
+@import "config";
+@import "navbar";
+@import "home";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $primary_background;
+  color: #ffff;
+  font-family: "Roboto mono";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  width: 400vw;
+}
+.slide {
+  height: 100vh;
+  width: 100vw;
+}
+
+.two {
+  background: #52e4dc;
+}
+
+.three {
+  background: #52eb52;
+}
+
+.four {
+  background: #caf062;
+}
+
+.outer__container {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+  .outer__container {
+    transform: none;
+    height: 100%;
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+    transform: none;
+  }
+
+  .home__content {
+    .header {
+      padding: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home__content {
+    text-align: center;
+    .header {
+      width: 100%;
+      padding: 0;
+      .hello {
+        font-size: 1.3rem;
+        margin-bottom: 7px;
+      }
+      .typer {
+        font-size: 1.7rem;
+      }
+
+      .resume {
+        padding: 9px 20px;
+        margin-top: 30px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

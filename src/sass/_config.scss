@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@500&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
+
+// Global Variables
+$primary_background: #23233b;
+$primary_color: #51ffff;
+
+// border mixin
+@mixin border {
+  border: 2px solid white;
+}
