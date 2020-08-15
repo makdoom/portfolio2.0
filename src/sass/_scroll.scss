@@ -1,9 +1,35 @@
 .scroll__indicator {
-  height: 100px;
-  width: 100px;
-  border: 1px solid white;
+  height: 70px;
+  width: 70px;
+  //   border: 1px solid white;
   z-index: 100;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   right: 50px;
+
+  .chart {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    // border: 1px solid red;
+
+    span {
+      color: $primary_color;
+      display: block;
+      text-align: center;
+
+      &:before {
+        font-size: 25px;
+        margin-left: 0;
+      }
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
