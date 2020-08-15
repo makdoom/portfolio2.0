@@ -22,8 +22,9 @@
 
     <div class="outer__container">
       <div class="container">
-        <div class="slide one">
+        <div class="slide one" id="home">
           <div class="home__content">
+            <div id="particles-js"></div>
             <div class="header">
               <h3 class="hello">Hello World,</h3>
               <p class="typer">I'm <span class="type"></span></p>
@@ -32,11 +33,15 @@
             </div>
           </div>
         </div>
-        <div class="slide two">Two</div>
-        <div class="slide three">Threee</div>
-        <div class="slide four">Four</div>
+        <div class="slide two" id="about">Two</div>
+        <div class="slide three" id="skills">Threee</div>
+        <div class="slide four" id="projects">Four</div>
       </div>
     </div>
+    <div class="scroll__indicator"></div>
+
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
