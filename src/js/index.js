@@ -1,6 +1,7 @@
 import "../sass/main.scss";
 import Typed from "typed.js/src/typed";
 let EasyPieChart = require("./easypiechart");
+
 // Toggling Humburger
 const menuBtn = document.querySelector(".burger");
 menuBtn.addEventListener("click", () => {

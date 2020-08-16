@@ -14,6 +14,7 @@
     "sass": "^1.26.10"
   },
   "dependencies": {
+    "scroll-out": "^2.2.11",
     "typed.js": "^2.0.11"
   }
 }

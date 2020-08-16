@@ -1,7 +1,8 @@
 @import "config";
 @import "navbar";
-@import "home";
 @import "scroll";
+@import "home";
+@import "about";
 
 * {
   margin: 0;
@@ -51,9 +52,6 @@ body {
   position: absolute;
 }
 
-.two {
-  border: 1px solid #fff;
-}
 @media screen and (max-width: 800px) {
   .outer__container {
     transform: none;
