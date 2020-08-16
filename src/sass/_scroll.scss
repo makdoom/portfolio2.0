@@ -1,28 +1,27 @@
 .scroll__indicator {
-  height: 70px;
-  width: 70px;
-  //   border: 1px solid white;
   z-index: 100;
   position: absolute;
   bottom: 30px;
-  right: 50px;
+  right: 40px;
 
   .chart {
     position: relative;
     margin: 0 auto;
     text-align: center;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
+    line-height: 55px;
+    width: 55px;
+    height: 55px;
     // border: 1px solid red;
 
     span {
       color: $primary_color;
       display: block;
       text-align: center;
+      animation: blink 2s linear infinite;
+      transition: 0.2s;
 
       &:before {
-        font-size: 25px;
+        font-size: 23px;
         margin-left: 0;
       }
     }
@@ -30,6 +29,14 @@
       position: absolute;
       top: 0;
       left: 0;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }

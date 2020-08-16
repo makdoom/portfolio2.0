@@ -21,8 +21,8 @@ let element = document.querySelector(".chart");
 let chart = new EasyPieChart(element, {
   barColor: "#00fff2",
   scaleColor: false,
-  trackColor: "#000",
-  size: 70,
+  trackColor: "transparent",
+  size: 55,
   animate: { duration: 10000, enabled: true },
 });
 

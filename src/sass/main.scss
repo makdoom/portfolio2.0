@@ -70,11 +70,22 @@ body {
       padding: 30px;
     }
   }
+
+  .scroll__indicator {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .navbar {
     right: 15px;
+
+    .burger {
+      .line:before,
+      .line:after {
+        height: 3px;
+      }
+    }
   }
   .nav__list .list {
     .list__item {

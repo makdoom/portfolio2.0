@@ -17,8 +17,6 @@
   width: 60px;
   cursor: pointer;
   box-sizing: border-box;
-  background: #262626;
-  border-radius: 50%;
 }
 .navbar .burger::before {
   content: "";
@@ -47,8 +45,8 @@
 }
 @keyframes animate {
   0% {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     border: 3px solid #51ffff;
     opacity: 1;
   }
@@ -62,23 +60,25 @@
   background: transparent;
 }
 .navbar .burger.active .line:before {
+  width: 28px;
   top: 0;
   transform: rotate(-135deg);
 }
 .navbar .burger.active .line:after {
+  width: 28px;
   top: 0;
   transform: rotate(135deg);
 }
 .navbar .burger .line {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
-  width: 28px;
+  width: 22px;
   height: 4px;
   background: #fff;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 .navbar .burger .line:before, .navbar .burger .line:after {
   position: absolute;
@@ -87,13 +87,13 @@
   height: 4px;
   background: #fff;
   border-radius: 5px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 .navbar .burger .line:before {
-  top: -9px;
+  top: -10px;
 }
 .navbar .burger .line:after {
-  top: 9px;
+  top: 10px;
 }
 .navbar .nav__list {
   position: absolute;
@@ -131,7 +131,7 @@
   border-radius: 3px;
   width: 0%;
   background: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
 }
 .navbar .nav__list .list .list__item a:before {
   top: -7px;
@@ -159,7 +159,6 @@
 .home__content .header {
   z-index: 50;
   padding: 50px;
-  padding-left: 30px;
 }
 .home__content .header .typer {
   font-size: 3.5rem;
@@ -189,7 +188,7 @@
   letter-spacing: 0.2rem;
   color: #51ffff;
   font-size: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
   position: relative;
 }
 .home__content .header .resume:before {
@@ -200,7 +199,7 @@
   height: 100%;
   width: 0%;
   background: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3 ease-in-out;
   border-radius: 30px;
   transform-origin: bottom;
   z-index: -1;
@@ -215,34 +214,42 @@
 }
 
 .scroll__indicator {
-  height: 70px;
-  width: 70px;
   z-index: 100;
   position: absolute;
   bottom: 30px;
-  right: 50px;
+  right: 40px;
 }
 .scroll__indicator .chart {
   position: relative;
   margin: 0 auto;
   text-align: center;
-  line-height: 70px;
-  width: 70px;
-  height: 70px;
+  line-height: 55px;
+  width: 55px;
+  height: 55px;
 }
 .scroll__indicator .chart span {
   color: #51ffff;
   display: block;
   text-align: center;
+  animation: blink 2s linear infinite;
+  transition: 0.2s;
 }
 .scroll__indicator .chart span:before {
-  font-size: 25px;
+  font-size: 23px;
   margin-left: 0;
 }
 .scroll__indicator .chart canvas {
   position: absolute;
   top: 0;
   left: 0;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 * {
@@ -312,10 +319,18 @@ body {
   .home__content .header {
     padding: 30px;
   }
+
+  .scroll__indicator {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar {
     right: 15px;
+  }
+  .navbar .burger .line:before,
+.navbar .burger .line:after {
+    height: 3px;
   }
 
   .nav__list .list .list__item {

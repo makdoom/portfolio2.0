@@ -6,5 +6,10 @@ $primary_color: #51ffff;
 
 // border mixin
 @mixin border {
-  border: 2px solid white;
+  border: 1px solid white;
+}
+
+// Transition mixin
+@mixin transition {
+  transition: all 0.3 ease-in-out;
 }

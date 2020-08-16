@@ -16,8 +16,6 @@
     width: 60px;
     cursor: pointer;
     box-sizing: border-box;
-    background: #262626;
-    border-radius: 50%;
 
     &::before {
       content: "";
@@ -48,8 +46,8 @@
 
     @keyframes animate {
       0% {
-        width: 60%;
-        height: 60%;
+        width: 65%;
+        height: 65%;
         border: 3px solid $primary_color;
         opacity: 1;
       }
@@ -64,11 +62,13 @@
     }
 
     &.active .line:before {
+      width: 28px;
       top: 0;
       transform: rotate(-135deg);
     }
 
     &.active .line:after {
+      width: 28px;
       top: 0;
       transform: rotate(135deg);
     }
@@ -76,13 +76,13 @@
     .line {
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 45%;
       transform: translate(-50%, -50%);
-      width: 28px;
+      width: 22px;
       height: 4px;
       background: #fff;
       border-radius: 5px;
-      transition: all 0.3s ease-in-out;
+      @include transition;
 
       &:before,
       &:after {
@@ -92,15 +92,15 @@
         height: 4px;
         background: #fff;
         border-radius: 5px;
-        transition: all 0.3s ease-in-out;
+        @include transition;
       }
 
       &:before {
-        top: -9px;
+        top: -10px;
       }
 
       &:after {
-        top: 9px;
+        top: 10px;
       }
     }
   }
@@ -113,7 +113,6 @@
     opacity: 0;
     z-index: -1;
     transition: all 0.3s ease-in-out;
-
     &.open {
       top: 100%;
       right: -20%;
@@ -148,7 +147,7 @@
             border-radius: 3px;
             width: 0%;
             background: transparent;
-            transition: all 0.3s ease-in-out;
+            @include transition;
           }
           &:before {
             top: -7px;

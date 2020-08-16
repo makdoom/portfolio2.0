@@ -1711,8 +1711,8 @@ var element = document.querySelector(".chart");
 var chart = new EasyPieChart(element, {
   barColor: "#00fff2",
   scaleColor: false,
-  trackColor: "#000",
-  size: 70,
+  trackColor: "transparent",
+  size: 55,
   animate: {
     duration: 10000,
     enabled: true
@@ -1759,7 +1759,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49812" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49761" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
