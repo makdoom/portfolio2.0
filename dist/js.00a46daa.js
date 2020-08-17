@@ -1691,21 +1691,8 @@ var _typed = _interopRequireDefault(require("typed.js/src/typed"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var EasyPieChart = require("./easypiechart"); // Toggling Humburger
+var EasyPieChart = require("./easypiechart"); // Scroll Indicator
 
-
-var menuBtn = document.querySelector(".burger");
-menuBtn.addEventListener("click", function () {
-  menuBtn.classList.toggle("active");
-  document.querySelector(".nav__list").classList.toggle("open");
-}); // Typing effect
-
-var typed = new _typed.default(".type", {
-  strings: ["Makdoom Shaikh", "Frontend Developer", "Programmer", "Developer"],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true
-}); // Scroll Indicator
 
 var element = document.querySelector(".chart");
 var chart = new EasyPieChart(element, {
@@ -1718,7 +1705,7 @@ var chart = new EasyPieChart(element, {
     enabled: true
   }
 });
-var percentage = 0;
+var percentage = null;
 var outerContainer = document.querySelector(".outer__container");
 outerContainer.addEventListener("scroll", function () {
   var scrollable = outerContainer.scrollHeight - outerContainer.offsetHeight;
@@ -1728,8 +1715,20 @@ outerContainer.addEventListener("scroll", function () {
     percentage = Math.ceil(scrolled / scrollable * 100);
   }
 
-  chart.update(percentage);
-  console.log(percentage);
+  chart.update(percentage); // console.log(percentage);
+}); // Toggling Humburger
+
+var menuBtn = document.querySelector(".burger");
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("active");
+  document.querySelector(".nav__list").classList.toggle("open");
+}); // Typing effect
+
+var typed = new _typed.default(".type", {
+  strings: ["Makdoom Shaikh", "Frontend Developer", "Programmer", "Developer"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
 });
 },{"../sass/main.scss":"sass/main.scss","typed.js/src/typed":"../node_modules/typed.js/src/typed.js","./easypiechart":"js/easypiechart.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -1759,7 +1758,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55656" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59769" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

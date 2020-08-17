@@ -72,18 +72,65 @@ body {
   .scroll__indicator {
     display: none;
   }
+
+  .about {
+    // @include border;
+    height: 140vh;
+
+    .about__heading {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+
+      &:after {
+        width: 0;
+      }
+    }
+
+    .about__body {
+      padding: 0;
+      display: block;
+
+      .portrait__box {
+        margin: 2rem 0;
+        width: 100%;
+
+        .portrait {
+          width: 220px;
+          height: 290px;
+          margin: 0 auto;
+
+          &:before {
+            border: 5px solid $primary_color;
+          }
+        }
+        // text-align: center;
+      }
+
+      .content {
+        margin: 3rem auto;
+        text-align: justify;
+        width: 100%;
+
+        h1 {
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
   .navbar {
     right: 15px;
 
-    .burger {
-      .line:before,
-      .line:after {
-        height: 3px;
-      }
-    }
+    // .burger {
+    //   .line,
+    //   .line:before,
+    //   .line:after {
+    //     height: 3px;
+    //   }
+    // }
   }
   .nav__list .list {
     .list__item {
@@ -109,5 +156,8 @@ body {
         font-size: 0.8rem;
       }
     }
+  }
+  .about {
+    height: 185vh;
   }
 }

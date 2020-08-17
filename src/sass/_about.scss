@@ -1,20 +1,33 @@
 .about {
   .about__heading {
+    width: 100%;
     position: relative;
-    display: inline-block;
     padding: 10px;
-    margin: 4rem 0 0 4rem;
+    margin: 2rem 0 0 3rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      background: #6565a0;
+      height: 1px;
+      top: 50%;
+      margin: 0 10px;
+      width: 50%;
+    }
   }
 
   .about__body {
     // @include border;
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
+    padding: 0 3rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 
+    .portrait__box {
+      width: 40%;
+    }
     .portrait {
       position: relative;
       width: 250px;
@@ -41,8 +54,8 @@
     }
 
     .content {
-      max-width: 60%;
-      //   @include border;
+      width: 60%;
+
       padding: 1.2rem;
       font-family: "Poppins";
 
@@ -52,10 +65,20 @@
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 0.93rem;
+        line-height: 1.6;
         text-align: justify;
         letter-spacing: 0.1rem;
+
+        span {
+          font-family: "Roboto mono";
+          color: $primary_color;
+          font-weight: bold;
+        }
       }
     }
   }
 }
+
+// a = [10,9,8,7,6,5,4,3,2,1,0]
+// // bubble and insertion ascending

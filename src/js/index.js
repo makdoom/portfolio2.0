@@ -2,6 +2,28 @@ import "../sass/main.scss";
 import Typed from "typed.js/src/typed";
 let EasyPieChart = require("./easypiechart");
 
+// Scroll Indicator
+let element = document.querySelector(".chart");
+let chart = new EasyPieChart(element, {
+  barColor: "#00fff2",
+  scaleColor: false,
+  trackColor: "transparent",
+  size: 55,
+  animate: { duration: 10000, enabled: true },
+});
+
+let percentage = null;
+const outerContainer = document.querySelector(".outer__container");
+outerContainer.addEventListener("scroll", () => {
+  const scrollable = outerContainer.scrollHeight - outerContainer.offsetHeight;
+  const scrolled = outerContainer.scrollTop;
+  if (scrollable > 0) {
+    percentage = Math.ceil((scrolled / scrollable) * 100);
+  }
+  chart.update(percentage);
+  // console.log(percentage);
+});
+
 // Toggling Humburger
 const menuBtn = document.querySelector(".burger");
 menuBtn.addEventListener("click", () => {
@@ -15,26 +37,4 @@ let typed = new Typed(".type", {
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
-});
-
-// Scroll Indicator
-let element = document.querySelector(".chart");
-let chart = new EasyPieChart(element, {
-  barColor: "#00fff2",
-  scaleColor: false,
-  trackColor: "transparent",
-  size: 55,
-  animate: { duration: 10000, enabled: true },
-});
-
-let percentage = 0;
-const outerContainer = document.querySelector(".outer__container");
-outerContainer.addEventListener("scroll", () => {
-  const scrollable = outerContainer.scrollHeight - outerContainer.offsetHeight;
-  const scrolled = outerContainer.scrollTop;
-  if (scrollable > 0) {
-    percentage = Math.ceil((scrolled / scrollable) * 100);
-  }
-  chart.update(percentage);
-  console.log(percentage);
 });

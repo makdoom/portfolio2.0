@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Inter&family=Poppins:wght@500&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Inter&family=Poppins:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap");
 .navbar {
   position: fixed;
   top: 10px;
@@ -253,18 +253,30 @@
 }
 
 .about .about__heading {
+  width: 100%;
   position: relative;
-  display: inline-block;
   padding: 10px;
-  margin: 4rem 0 0 4rem;
+  margin: 2rem 0 0 3rem;
+}
+.about .about__heading:after {
+  content: "";
+  position: absolute;
+  background: #6565a0;
+  height: 1px;
+  top: 50%;
+  margin: 0 10px;
+  width: 50%;
 }
 .about .about__body {
   width: 100vw;
-  height: 70vh;
+  height: 80vh;
+  padding: 0 3rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+}
+.about .about__body .portrait__box {
+  width: 40%;
 }
 .about .about__body .portrait {
   position: relative;
@@ -289,7 +301,7 @@
   height: 100%;
 }
 .about .about__body .content {
-  max-width: 60%;
+  width: 60%;
   padding: 1.2rem;
   font-family: "Poppins";
 }
@@ -298,9 +310,15 @@
   margin: 8px 0;
 }
 .about .about__body .content p {
-  font-size: 1.1rem;
+  font-size: 0.93rem;
+  line-height: 1.6;
   text-align: justify;
   letter-spacing: 0.1rem;
+}
+.about .about__body .content p span {
+  font-family: "Roboto mono";
+  color: #51ffff;
+  font-weight: bold;
 }
 
 * {
@@ -370,14 +388,46 @@ body {
   .scroll__indicator {
     display: none;
   }
+
+  .about {
+    height: 140vh;
+  }
+  .about .about__heading {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .about .about__heading:after {
+    width: 0;
+  }
+  .about .about__body {
+    padding: 0;
+    display: block;
+  }
+  .about .about__body .portrait__box {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .about .about__body .portrait__box .portrait {
+    width: 220px;
+    height: 290px;
+    margin: 0 auto;
+  }
+  .about .about__body .portrait__box .portrait:before {
+    border: 5px solid #51ffff;
+  }
+  .about .about__body .content {
+    margin: 3rem auto;
+    text-align: justify;
+    width: 100%;
+  }
+  .about .about__body .content h1 {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar {
     right: 15px;
-  }
-  .navbar .burger .line:before,
-.navbar .burger .line:after {
-    height: 3px;
   }
 
   .nav__list .list .list__item {
@@ -402,6 +452,10 @@ body {
     padding: 9px 20px;
     margin-top: 30px;
     font-size: 0.8rem;
+  }
+
+  .about {
+    height: 185vh;
   }
 }
 
