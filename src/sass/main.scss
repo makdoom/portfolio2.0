@@ -3,6 +3,7 @@
 @import "scroll";
 @import "home";
 @import "about";
+@import "skills";
 
 * {
   margin: 0;
@@ -88,19 +89,17 @@ body {
     display: none;
   }
 
-  .about {
-    // @include border;
-    height: 140vh;
+  .page__heading {
+    width: 100%;
+    margin: 0;
+    text-align: center;
 
-    .about__heading {
-      width: 100%;
-      margin: 0;
-      text-align: center;
-
-      &:after {
-        width: 0;
-      }
+    &:after {
+      width: 0;
     }
+  }
+  .about {
+    height: 140vh;
 
     .about__body {
       padding: 0;

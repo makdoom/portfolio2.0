@@ -101,7 +101,7 @@
   right: -100%;
   opacity: 0;
   z-index: -1;
-  background: #4c4c77;
+  background: #3f3f63;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
@@ -256,13 +256,13 @@
   border: nones;
 }
 
-.about .about__heading {
+.page__heading {
   width: 100%;
   position: relative;
   padding: 10px;
   margin: 2rem 0 0 3rem;
 }
-.about .about__heading:after {
+.page__heading:after {
   content: "";
   position: absolute;
   background: #6565a0;
@@ -271,6 +271,7 @@
   margin: 0 10px;
   width: 50%;
 }
+
 .about .about__body {
   width: 100vw;
   height: 80vh;
@@ -323,6 +324,19 @@
   font-family: "Roboto mono";
   color: #51ffff;
   font-weight: bold;
+}
+
+.skills {
+  border: 1px solid white;
+}
+.skills .skills__content {
+  height: 80%;
+}
+.skills .skills__content .sub__heading {
+  font-family: "Poppins";
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 * {
@@ -409,16 +423,17 @@ body {
     display: none;
   }
 
-  .about {
-    height: 140vh;
-  }
-  .about .about__heading {
+  .page__heading {
     width: 100%;
     margin: 0;
     text-align: center;
   }
-  .about .about__heading:after {
+  .page__heading:after {
     width: 0;
+  }
+
+  .about {
+    height: 140vh;
   }
   .about .about__body {
     padding: 0;
