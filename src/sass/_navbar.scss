@@ -112,10 +112,14 @@
     right: -100%;
     opacity: 0;
     z-index: -1;
+    background: #4c4c77;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease-in-out;
     &.open {
       top: 100%;
-      right: -20%;
+      right: -50%;
       opacity: 1;
     }
 
@@ -124,7 +128,6 @@
       .list__item {
         list-style: none;
         text-align: center;
-
         width: 100px;
         margin: 1.7rem 0;
 

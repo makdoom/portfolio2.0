@@ -78,7 +78,7 @@
   height: 4px;
   background: #fff;
   border-radius: 5px;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .navbar .burger .line:before, .navbar .burger .line:after {
   position: absolute;
@@ -87,7 +87,7 @@
   height: 4px;
   background: #fff;
   border-radius: 5px;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .navbar .burger .line:before {
   top: -10px;
@@ -101,11 +101,15 @@
   right: -100%;
   opacity: 0;
   z-index: -1;
+  background: #4c4c77;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in-out;
 }
 .navbar .nav__list.open {
   top: 100%;
-  right: -20%;
+  right: -50%;
   opacity: 1;
 }
 .navbar .nav__list .list .list__item {
@@ -227,7 +231,7 @@
   letter-spacing: 0.2rem;
   color: #51ffff;
   font-size: 1rem;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
 }
 .home__content .header .resume:before {
@@ -238,7 +242,7 @@
   height: 100%;
   width: 0%;
   background: transparent;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 30px;
   transform-origin: bottom;
   z-index: -1;
@@ -381,8 +385,24 @@ body {
     transform: none;
   }
 
+  .home__content {
+    text-align: center;
+  }
   .home__content .header {
-    padding: 30px;
+    width: 100%;
+    padding: 0;
+  }
+  .home__content .header .hello {
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+  }
+  .home__content .header .typer {
+    font-size: 2.5rem;
+  }
+  .home__content .header .resume {
+    padding: 12px 25px;
+    margin-top: 30px;
+    font-size: 1rem;
   }
 
   .scroll__indicator {
@@ -430,8 +450,9 @@ body {
     right: 15px;
   }
 
-  .nav__list .list .list__item {
-    margin: 1.3rem 0 !important;
+  .nav__list.open {
+    padding: 10px;
+    right: 0px !important;
   }
 
   .home__content {
@@ -442,11 +463,11 @@ body {
     padding: 0;
   }
   .home__content .header .hello {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 7px;
   }
   .home__content .header .typer {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
   }
   .home__content .header .resume {
     padding: 9px 20px;
@@ -455,7 +476,11 @@ body {
   }
 
   .about {
+    margin-top: 5rem;
     height: 185vh;
+  }
+  .about .content h1 {
+    font-size: 1.7rem;
   }
 }
 

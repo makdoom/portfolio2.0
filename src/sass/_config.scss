@@ -12,5 +12,5 @@ $primary_color: #51ffff;
 
 // Transition mixin
 @mixin transition {
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }

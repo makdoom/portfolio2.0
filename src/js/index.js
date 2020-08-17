@@ -17,11 +17,9 @@ const outerContainer = document.querySelector(".outer__container");
 outerContainer.addEventListener("scroll", () => {
   const scrollable = outerContainer.scrollHeight - outerContainer.offsetHeight;
   const scrolled = outerContainer.scrollTop;
-  if (scrollable > 0) {
-    percentage = Math.ceil((scrolled / scrollable) * 100);
-  }
+
+  percentage = Math.ceil((scrolled / scrollable) * 100);
   chart.update(percentage);
-  // console.log(percentage);
 });
 
 // Toggling Humburger
@@ -30,7 +28,6 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   document.querySelector(".nav__list").classList.toggle("open");
 });
-
 // Typing effect
 let typed = new Typed(".type", {
   strings: ["Makdoom Shaikh", "Frontend Developer", "Programmer", "Developer"],

@@ -1710,12 +1710,8 @@ var outerContainer = document.querySelector(".outer__container");
 outerContainer.addEventListener("scroll", function () {
   var scrollable = outerContainer.scrollHeight - outerContainer.offsetHeight;
   var scrolled = outerContainer.scrollTop;
-
-  if (scrollable > 0) {
-    percentage = Math.ceil(scrolled / scrollable * 100);
-  }
-
-  chart.update(percentage); // console.log(percentage);
+  percentage = Math.ceil(scrolled / scrollable * 100);
+  chart.update(percentage);
 }); // Toggling Humburger
 
 var menuBtn = document.querySelector(".burger");
