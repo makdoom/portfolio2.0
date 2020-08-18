@@ -1,8 +1,5 @@
 .skills {
-  @include border;
-
   .skills__content {
-    // border: 2px solid red;
     height: 80%;
 
     .sub__heading {
@@ -10,6 +7,26 @@
       letter-spacing: 0.1rem;
       text-align: center;
       margin: 2rem 0;
+      font-size: 2rem;
+    }
+
+    .skills__box {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+
+      .box {
+        margin: 2rem 3.5rem;
+
+        img {
+          // @include border;
+          // cursor: pointer;
+          height: 100px;
+          width: 100px;
+        }
+      }
     }
   }
 }

@@ -132,6 +132,20 @@ body {
       }
     }
   }
+
+  .skills {
+    @include border;
+    margin-top: 10rem;
+
+    .skills__content {
+      height: 120vh;
+
+      .sub__heading {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
