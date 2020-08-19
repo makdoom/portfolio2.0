@@ -19,10 +19,14 @@
 
       .box {
         margin: 2rem 3.5rem;
+        text-align: center;
+
+        p {
+          font-size: 1rem;
+          font-weight: bold;
+        }
 
         img {
-          // @include border;
-          // cursor: pointer;
           height: 100px;
           width: 100px;
         }
