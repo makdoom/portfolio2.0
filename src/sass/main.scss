@@ -35,7 +35,7 @@ body {
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  width: 550vw;
+  width: 650vw;
 }
 
 .slide {
@@ -224,11 +224,6 @@ body {
       padding: 2.5rem 0;
       // @include border;
       height: 200vh;
-    }
-
-    .card {
-      // margin: 0;
-      // margin-top: 3rem 0 !important;
     }
   }
 }

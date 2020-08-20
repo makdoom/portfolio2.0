@@ -9,7 +9,7 @@
     padding: 50px;
 
     .typer {
-      font-size: 3.5rem;
+      font-size: 3.3rem;
       font-family: "Roboto mono";
       font-weight: 600;
     }
@@ -43,8 +43,9 @@
       &:before {
         content: "";
         position: absolute;
-        top: 0%;
-        left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         height: 100%;
         width: 00%;
         background: transparent;
@@ -52,7 +53,6 @@
         border-radius: 30px;
         transform-origin: bottom;
         z-index: -1;
-        transform: skewX(-20deg);
       }
       &:hover:before {
         background: $primary_color;

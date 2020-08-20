@@ -204,7 +204,7 @@
   padding: 50px;
 }
 .home__content .header .typer {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-family: "Roboto mono";
   font-weight: 600;
 }
@@ -237,8 +237,9 @@
 .home__content .header .resume:before {
   content: "";
   position: absolute;
-  top: 0%;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 100%;
   width: 0%;
   background: transparent;
@@ -246,7 +247,6 @@
   border-radius: 30px;
   transform-origin: bottom;
   z-index: -1;
-  transform: skewX(-20deg);
 }
 .home__content .header .resume:hover:before {
   background: #51ffff;
@@ -472,7 +472,7 @@ body {
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  width: 550vw;
+  width: 650vw;
 }
 
 .slide {
