@@ -17,18 +17,18 @@
     cursor: pointer;
     box-sizing: border-box;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 0;
-      height: 0;
-      box-sizing: border-box;
-      border-radius: 50%;
-      animation: animate 2s linear infinite;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    //   width: 0;
+    //   height: 0;
+    //   box-sizing: border-box;
+    //   border-radius: 50%;
+    //   animation: animate 2s linear infinite;
+    // }
 
     &::after {
       content: "";
@@ -64,13 +64,13 @@
     &.active .line:before {
       width: 28px;
       top: 0;
-      transform: rotate(-135deg);
+      transform: rotate(135deg);
     }
 
     &.active .line:after {
       width: 28px;
       top: 0;
-      transform: rotate(135deg);
+      transform: rotate(-135deg);
     }
 
     .line {
@@ -79,7 +79,7 @@
       left: 45%;
       transform: translate(-50%, -50%);
       width: 22px;
-      height: 4px;
+      height: 0.25rem;
       background: #fff;
       border-radius: 5px;
       @include transition;
@@ -89,7 +89,7 @@
         position: absolute;
         content: "";
         width: 28px;
-        height: 4px;
+        height: 0.25rem;
         background: #fff;
         border-radius: 5px;
         @include transition;

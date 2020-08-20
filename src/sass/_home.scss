@@ -1,3 +1,6 @@
+.home {
+  width: 111vw;
+}
 .home__content {
   height: 100%;
   width: 100%;
@@ -55,6 +58,7 @@
         z-index: -1;
       }
       &:hover:before {
+        border: 2px solid $primary_color;
         background: $primary_color;
         width: 100%;
       }

@@ -18,18 +18,6 @@
   cursor: pointer;
   box-sizing: border-box;
 }
-.navbar .burger::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  box-sizing: border-box;
-  border-radius: 50%;
-  animation: animate 2s linear infinite;
-}
 .navbar .burger::after {
   content: "";
   position: absolute;
@@ -62,12 +50,12 @@
 .navbar .burger.active .line:before {
   width: 28px;
   top: 0;
-  transform: rotate(-135deg);
+  transform: rotate(135deg);
 }
 .navbar .burger.active .line:after {
   width: 28px;
   top: 0;
-  transform: rotate(135deg);
+  transform: rotate(-135deg);
 }
 .navbar .burger .line {
   position: absolute;
@@ -75,7 +63,7 @@
   left: 45%;
   transform: translate(-50%, -50%);
   width: 22px;
-  height: 4px;
+  height: 0.25rem;
   background: #fff;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -84,7 +72,7 @@
   position: absolute;
   content: "";
   width: 28px;
-  height: 4px;
+  height: 0.25rem;
   background: #fff;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -193,6 +181,10 @@
   }
 }
 
+.home {
+  width: 111vw;
+}
+
 .home__content {
   height: 100%;
   width: 100%;
@@ -249,6 +241,7 @@
   z-index: -1;
 }
 .home__content .header .resume:hover:before {
+  border: 2px solid #51ffff;
   background: #51ffff;
   width: 100%;
 }
@@ -289,11 +282,11 @@
   width: 250px;
   height: 300px;
   background: radial-gradient(#f5f4f4, #757575);
+  cursor: pointer;
 }
 .about .about__body .portrait img {
   width: 100%;
   height: 100%;
-  padding-left: 10px;
   -webkit-filter: drop-shadow(5px 5px 25px rgba(71, 71, 71, 0.8));
   filter: drop-shadow(5px 5px 25px rgba(71, 71, 71, 0.8));
 }
@@ -305,6 +298,11 @@
   border: 8px solid #51ffff;
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.about .about__body .portrait:hover:before {
+  right: -8px;
+  top: -8px;
 }
 .about .about__body .content {
   width: 60%;
@@ -374,7 +372,7 @@
   cursor: pointer;
   height: 220px;
   max-width: 300px;
-  background: #3f3f6b;
+  background: #35355a;
   margin: 3rem 0rem;
   padding: 20px 15px;
   display: flex;
@@ -450,7 +448,7 @@
 }
 
 body {
-  background: #23233b;
+  background: #222238;
   color: #ffff;
   font-family: "Roboto mono";
 }
@@ -478,6 +476,13 @@ body {
 .slide {
   height: 100vh;
   width: 100vw;
+  margin-right: 6rem;
+}
+
+.contact {
+  border: 1px solid white;
+  width: 111vw;
+  margin-right: 0;
 }
 
 .outer__container {
