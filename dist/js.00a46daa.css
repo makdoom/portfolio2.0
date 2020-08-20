@@ -205,7 +205,7 @@
 }
 .home__content .header .typer {
   font-size: 3.5rem;
-  font-family: "Poppins";
+  font-family: "Roboto mono";
   font-weight: 600;
 }
 .home__content .header .hello {
@@ -222,11 +222,11 @@
   outline: none;
   background: transparent;
   border: 2px solid #51ffff;
-  padding: 11px 30px;
+  padding: 15px 40px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 30px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: #51ffff;
@@ -246,6 +246,7 @@
   border-radius: 30px;
   transform-origin: bottom;
   z-index: -1;
+  transform: skewX(-20deg);
 }
 .home__content .header .resume:hover:before {
   background: #51ffff;
@@ -269,7 +270,7 @@
   height: 1px;
   top: 50%;
   margin: 0 10px;
-  width: 50%;
+  width: 500px;
 }
 
 .about .about__body {
@@ -356,6 +357,92 @@
   width: 100px;
 }
 
+.projects {
+  width: 250vw !important;
+}
+.projects .project__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 6rem 3.5rem 2rem 2rem;
+}
+.projects .project__container .card {
+  position: relative;
+  cursor: pointer;
+  height: 220px;
+  max-width: 300px;
+  background: #3f3f6b;
+  margin: 3rem 0rem;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+.projects .project__container .card:hover {
+  height: 420px;
+}
+.projects .project__container .card .img__box {
+  position: relative;
+  width: 230px;
+  height: 210px;
+  top: -50px;
+  left: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.projects .project__container .card .img__box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.projects .project__container .card .details {
+  margin-top: -160px;
+  text-align: justify;
+  padding: 10px;
+  z-index: -1;
+  font-family: "Poppins";
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.projects .project__container .card .details h2 {
+  text-align: center;
+  padding: 6px 0;
+  font-family: "Roboto mono";
+}
+.projects .project__container .card .details p {
+  letter-spacing: 0.5px;
+  color: #e4e4e4;
+}
+.projects .project__container .card .details .view {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  margin-top: 1.3rem;
+  text-align: right;
+}
+.projects .project__container .card .details .view a {
+  text-align: right;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #51ffff;
+  margin: 10px 12px;
+  transition: all 0.3s ease-in-out;
+}
+.projects .project__container .card .details .view a:hover {
+  color: #fff;
+}
+.projects .project__container .card:hover .details {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -35px;
+  z-index: 1;
+  transition-duration: 0.4s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -385,7 +472,7 @@ body {
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  width: 400vw;
+  width: 550vw;
 }
 
 .slide {
@@ -497,6 +584,12 @@ body {
   .skills .skills__content .skills__box .box {
     margin: 2rem 1.5rem;
   }
+
+  .projects {
+    margin-top: 5rem;
+    width: 100vw !important;
+    height: 150vh;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar {
@@ -516,16 +609,16 @@ body {
     padding: 0;
   }
   .home__content .header .hello {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 7px;
   }
   .home__content .header .typer {
-    font-size: 1.9rem;
+    font-size: 1.95rem;
   }
   .home__content .header .resume {
-    padding: 9px 20px;
+    padding: 12px 25px;
     margin-top: 30px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .about {
@@ -537,10 +630,20 @@ body {
   }
   .about .content p {
     padding: 8px;
+    font-size: 1rem !important;
   }
 
   .skills {
     height: 110vh;
+  }
+
+  .projects {
+    margin: 0;
+    margin-top: 20rem;
+  }
+  .projects .project__container {
+    padding: 2.5rem 0;
+    height: 200vh;
   }
 }
 

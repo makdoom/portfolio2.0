@@ -10,7 +10,7 @@
 
     .typer {
       font-size: 3.5rem;
-      font-family: "Poppins";
+      font-family: "Roboto mono";
       font-weight: 600;
     }
     .hello {
@@ -28,11 +28,11 @@
       outline: none;
       background: transparent;
       border: 2px solid $primary_color;
-      padding: 11px 30px;
+      padding: 15px 40px;
       border-radius: 30px;
       cursor: pointer;
       font-weight: bold;
-      margin-top: 20px;
+      margin-top: 30px;
       text-transform: uppercase;
       letter-spacing: 0.2rem;
       color: $primary_color;
@@ -52,6 +52,7 @@
         border-radius: 30px;
         transform-origin: bottom;
         z-index: -1;
+        transform: skewX(-20deg);
       }
       &:hover:before {
         background: $primary_color;

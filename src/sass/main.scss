@@ -4,6 +4,7 @@
 @import "home";
 @import "about";
 @import "skills";
+@import "projects";
 
 * {
   margin: 0;
@@ -34,7 +35,7 @@ body {
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  width: 400vw;
+  width: 550vw;
 }
 
 .slide {
@@ -161,6 +162,12 @@ body {
       }
     }
   }
+
+  .projects {
+    margin-top: 5rem;
+    width: 100vw !important;
+    height: 150vh;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -177,17 +184,17 @@ body {
       width: 100%;
       padding: 0;
       .hello {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 7px;
       }
       .typer {
-        font-size: 1.9rem;
+        font-size: 1.95rem;
       }
 
       .resume {
-        padding: 9px 20px;
+        padding: 12px 25px;
         margin-top: 30px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
     }
   }
@@ -201,10 +208,27 @@ body {
 
     .content p {
       padding: 8px;
+      font-size: 1rem !important;
     }
   }
 
   .skills {
     height: 110vh;
+  }
+  .projects {
+    margin: 0;
+    margin-top: 20rem;
+    // width: 100vw !important;
+
+    .project__container {
+      padding: 2.5rem 0;
+      // @include border;
+      height: 200vh;
+    }
+
+    .card {
+      // margin: 0;
+      // margin-top: 3rem 0 !important;
+    }
   }
 }
