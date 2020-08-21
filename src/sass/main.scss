@@ -228,4 +228,13 @@ body {
       height: 200vh;
     }
   }
+
+  .contact {
+    margin: 0;
+    padding: 0;
+    @include border;
+    margin-top: 75rem;
+    height: 100vh;
+    width: 100vw;
+  }
 }

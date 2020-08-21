@@ -142,45 +142,6 @@
   width: 100%;
 }
 
-.scroll__indicator {
-  z-index: 100;
-  position: absolute;
-  bottom: 30px;
-  right: 40px;
-}
-.scroll__indicator .chart {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 55px;
-  width: 55px;
-  height: 55px;
-}
-.scroll__indicator .chart span {
-  color: #51ffff;
-  display: block;
-  text-align: center;
-  animation: blink 2s linear infinite;
-  transition: 0.2s;
-}
-.scroll__indicator .chart span:before {
-  font-size: 23px;
-  margin-left: 0;
-}
-.scroll__indicator .chart canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .home {
   width: 111vw;
 }
@@ -444,6 +405,7 @@
 .contact {
   width: 111vw;
   margin-right: 0;
+  margin-left: 5rem;
 }
 .contact .contact__body {
   position: relative;
@@ -502,7 +464,7 @@
 .contact .contact__body .social__links {
   position: absolute;
   bottom: 12%;
-  left: 5%;
+  right: 5%;
 }
 .contact .contact__body .social__links .icons {
   display: flex;
@@ -523,7 +485,7 @@
   content: "";
   display: block;
   width: 1px;
-  height: 250px;
+  height: 200px;
   background-color: #a8b2d1;
   margin: 0px auto;
 }
@@ -746,6 +708,15 @@ body {
   .projects .project__container {
     padding: 2.5rem 0;
     height: 200vh;
+  }
+
+  .contact {
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    margin-top: 75rem;
+    height: 100vh;
+    width: 100vw;
   }
 }
 

@@ -1,42 +1,42 @@
-.scroll__indicator {
-  z-index: 100;
-  position: absolute;
-  bottom: 30px;
-  right: 40px;
+// .croll__indicator {
+//   z-index: 100;
+//   position: absolute;
+//   bottom: 30px;
+//   right: 40px;
 
-  .chart {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 55px;
-    width: 55px;
-    height: 55px;
-    // border: 1px solid red;
+//   .chart {
+//     position: relative;
+//     margin: 0 auto;
+//     text-align: center;
+//     line-height: 55px;
+//     width: 55px;
+//     height: 55px;
+//     // border: 1px solid red;
 
-    span {
-      color: $primary_color;
-      display: block;
-      text-align: center;
-      animation: blink 2s linear infinite;
-      transition: 0.2s;
+//     span {
+//       color: $primary_color;
+//       display: block;
+//       text-align: center;
+//       animation: blink 2s linear infinite;
+//       transition: 0.2s;
 
-      &:before {
-        font-size: 23px;
-        margin-left: 0;
-      }
-    }
-    canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-}
+//       &:before {
+//         font-size: 23px;
+//         margin-left: 0;
+//       }
+//     }
+//     canvas {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//     }
+//   }
+//   @keyframes blink {
+//     0% {
+//       opacity: 0;
+//     }
+//     100% {
+//       opacity: 1;
+//     }
+//   }
+// }

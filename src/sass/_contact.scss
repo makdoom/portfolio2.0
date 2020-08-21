@@ -2,6 +2,7 @@
   //   @include border;
   width: 111vw;
   margin-right: 0;
+  margin-left: 5rem;
 
   .contact__body {
     position: relative;
@@ -66,7 +67,7 @@
     .social__links {
       position: absolute;
       bottom: 12%;
-      left: 5%;
+      right: 5%;
 
       .icons {
         display: flex;
@@ -89,7 +90,7 @@
           content: "";
           display: block;
           width: 1px;
-          height: 250px;
+          height: 200px;
           background-color: rgb(168, 178, 209);
           margin: 0px auto;
         }
@@ -97,10 +98,7 @@
     }
 
     .footer {
-      //   height: 100px;
       margin: 0 auto;
-      //   width: 300px;
-      //   @include border;
       position: absolute;
       left: 50%;
       bottom: 10%;
