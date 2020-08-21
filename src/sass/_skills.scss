@@ -1,14 +1,13 @@
+.sub__heading {
+  font-family: "Poppins";
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.7rem;
+}
 .skills {
   .skills__content {
     height: 80%;
-
-    .sub__heading {
-      font-family: "Poppins";
-      letter-spacing: 0.1rem;
-      text-align: center;
-      margin: 2rem 0;
-      font-size: 2rem;
-    }
 
     .skills__box {
       display: flex;
@@ -23,6 +22,7 @@
 
         p {
           font-size: 1rem;
+          color: $primary_text;
           font-weight: bold;
         }
 

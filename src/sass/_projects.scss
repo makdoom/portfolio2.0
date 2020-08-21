@@ -1,17 +1,12 @@
 .projects {
-  // @include border;
   width: 250vw !important;
-  //   background: red;
 
   .project__container {
-    // @include border;
     position: relative;
     width: 100%;
     height: 100%;
-    // background: red;
     display: flex;
     justify-content: space-evenly;
-    // align-items: center;
     flex-wrap: wrap;
     padding: 6rem 3.5rem 2rem 2rem;
 
@@ -59,9 +54,9 @@
 
         h2 {
           text-align: center;
-          font-weight: bold;
+          font-weight: 800;
           padding: 6px 0;
-          font-family: "Roboto mono";
+          letter-spacing: 0.1rem;
         }
 
         p {

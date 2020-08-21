@@ -86,7 +86,7 @@
 .navbar .nav__list {
   position: absolute;
   top: 100%;
-  right: 100%;
+  right: -300%;
   opacity: 0;
   z-index: -1;
   background: #3f3f63;
@@ -167,7 +167,7 @@
   font-weight: bold;
 }
 .home__content .header span {
-  color: cyan;
+  color: #51ffff;
   font-family: "Roboto mono";
 }
 .home__content .header .resume {
@@ -175,7 +175,7 @@
   outline: none;
   background: transparent;
   border: 2px solid #51ffff;
-  padding: 12px 40px;
+  padding: 15px 40px;
   border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
@@ -214,6 +214,9 @@
   position: relative;
   padding: 10px;
   margin: 2rem 0 0 3rem;
+}
+.page__heading span {
+  color: #51ffff;
 }
 .page__heading:after {
   content: "";
@@ -285,15 +288,16 @@
   font-weight: bold;
 }
 
-.skills .skills__content {
-  height: 80%;
-}
-.skills .skills__content .sub__heading {
+.sub__heading {
   font-family: "Poppins";
   letter-spacing: 0.1rem;
   text-align: center;
   margin: 2rem 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
+}
+
+.skills .skills__content {
+  height: 80%;
 }
 .skills .skills__content .skills__box {
   display: flex;
@@ -308,6 +312,7 @@
 }
 .skills .skills__content .skills__box .box p {
   font-size: 1rem;
+  color: #ded9ff;
   font-weight: bold;
 }
 .skills .skills__content .skills__box .box img {
@@ -368,9 +373,9 @@
 }
 .projects .project__container .card .details h2 {
   text-align: center;
-  font-weight: bold;
+  font-weight: 800;
   padding: 6px 0;
-  font-family: "Roboto mono";
+  letter-spacing: 0.1rem;
 }
 .projects .project__container .card .details p {
   letter-spacing: 0.5px;
@@ -463,6 +468,7 @@
 }
 .contact .contact__body .social__links {
   position: absolute;
+  z-index: 500;
   bottom: 12%;
   right: 5%;
 }
@@ -485,7 +491,7 @@
   content: "";
   display: block;
   width: 1px;
-  height: 200px;
+  height: 100px;
   background-color: #a8b2d1;
   margin: 0px auto;
 }
@@ -654,6 +660,39 @@ body {
     width: 100vw !important;
     height: 150vh;
   }
+
+  .contact {
+    margin: 0;
+    padding: 0;
+    margin-top: 20rem;
+    height: 100vh;
+    width: 100vw;
+  }
+  .contact .get__in__touch {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .contact .get__in__touch a {
+    margin: 2rem 0 !important;
+    padding: 0.5rem 1.8rem !important;
+  }
+  .contact .social__links {
+    bottom: 10% !important;
+    right: 27% !important;
+  }
+  .contact .social__links .icons {
+    flex-direction: row !important;
+  }
+  .contact .social__links .icons a {
+    margin: 0.8rem 2rem !important;
+  }
+  .contact .social__links .icons:after {
+    height: 0 !important;
+    width: 0 !important;
+  }
+  .contact .footer {
+    bottom: 0 !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .navbar {
@@ -680,9 +719,9 @@ body {
     font-size: 1.95rem;
   }
   .home__content .header .resume {
-    padding: 12px 25px;
+    padding: 15px 28px;
     margin-top: 30px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .about {
@@ -713,10 +752,23 @@ body {
   .contact {
     margin: 0;
     padding: 0;
-    border: 1px solid white;
     margin-top: 75rem;
     height: 100vh;
     width: 100vw;
+  }
+  .contact .get__in__touch h1 {
+    font-size: 2rem !important;
+  }
+  .contact .social__links {
+    bottom: 9% !important;
+    right: 25% !important;
+  }
+  .contact .social__links .icons a {
+    margin: 0.8rem !important;
+  }
+  .contact .footer {
+    width: 100%;
+    bottom: 0 !important;
   }
 }
 

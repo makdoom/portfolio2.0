@@ -1,6 +1,5 @@
 @import "config";
 @import "navbar";
-@import "scroll";
 @import "home";
 @import "about";
 @import "skills";
@@ -121,7 +120,6 @@ body {
             border: 5px solid $primary_color;
           }
         }
-        // text-align: center;
       }
 
       .content {
@@ -170,6 +168,45 @@ body {
     width: 100vw !important;
     height: 150vh;
   }
+
+  .contact {
+    margin: 0;
+    padding: 0;
+    // @include border;
+    margin-top: 20rem;
+    height: 100vh;
+    width: 100vw;
+
+    .get__in__touch {
+      width: 100%;
+      padding: 0 2rem;
+
+      a {
+        margin: 2rem 0 !important;
+        padding: 0.5rem 1.8rem !important;
+      }
+    }
+
+    .social__links {
+      bottom: 10% !important;
+      right: 27% !important;
+      .icons {
+        flex-direction: row !important;
+
+        a {
+          margin: 0.8rem 2rem !important;
+        }
+        &:after {
+          height: 0 !important;
+          width: 0 !important;
+        }
+      }
+    }
+
+    .footer {
+      bottom: 0 !important;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -194,9 +231,9 @@ body {
       }
 
       .resume {
-        padding: 12px 25px;
+        padding: 15px 28px;
         margin-top: 30px;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
       }
     }
   }
@@ -232,9 +269,28 @@ body {
   .contact {
     margin: 0;
     padding: 0;
-    @include border;
     margin-top: 75rem;
     height: 100vh;
     width: 100vw;
+
+    .get__in__touch {
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+
+    .social__links {
+      bottom: 9% !important;
+      right: 25% !important;
+      .icons {
+        a {
+          margin: 0.8rem !important;
+        }
+      }
+    }
+    .footer {
+      width: 100%;
+      bottom: 0 !important;
+    }
   }
 }

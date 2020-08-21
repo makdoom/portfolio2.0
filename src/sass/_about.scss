@@ -4,6 +4,10 @@
   padding: 10px;
   margin: 2rem 0 0 3rem;
 
+  span {
+    color: $primary_color;
+  }
+
   &:after {
     content: "";
     position: absolute;

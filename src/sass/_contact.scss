@@ -16,6 +16,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+      //   @include border;
 
       h1 {
         font-size: 2.5rem;
@@ -66,6 +67,7 @@
 
     .social__links {
       position: absolute;
+      z-index: 500;
       bottom: 12%;
       right: 5%;
 
@@ -90,7 +92,7 @@
           content: "";
           display: block;
           width: 1px;
-          height: 200px;
+          height: 100px;
           background-color: rgb(168, 178, 209);
           margin: 0px auto;
         }
