@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/flaticon.6676d524.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Portfolio</title>
   <script src="/flaticon.6676d524.js"></script><link rel="stylesheet" href="/js.00a46daa.css"></head>
   <body>
+    <div class="loader__bg">
+      <div class="loader"></div>
+    </div>
+    <!-- Custom cursor -->
+    <div class="cursor"></div>
     <div class="navbar">
       <div class="burger">
         <div class="line"></div>
@@ -24,13 +30,13 @@
       </div>
     </div>
 
-    <div class="outer__container">
+    <div class="outer__container" id="fullpage">
       <div class="container">
         <!-- Home section -->
         <div class="slide home" id="home">
           <div class="home__content">
             <div id="particles-js"></div>
-            <div class="header">
+            <div class="header" data-aos="fade-up">
               <h3 class="hello">Hello World,</h3>
               <p class="typer">I'm <span class="type"></span></p>
 
@@ -41,10 +47,10 @@
         <!-- end of home section  -->
 
         <!-- about section -->
-        <div class="slide about" id="about">
+        <section class="slide about" id="about">
           <h2 class="page__heading"><span>02.</span> About me</h2>
           <div class="about__body">
-            <div class="portrait__box">
+            <div class="portrait__box" data-tilt="">
               <div class="portrait">
                 <img src="/portrait__final.3b904a60.png" alt="">
               </div>
@@ -72,20 +78,20 @@
               </p>
             </div>
           </div>
-        </div>
+        </section>
         <!-- end of about section -->
 
         <!-- Skills section -->
-        <div class="slide skills" id="skills">
+        <section class="slide skills" id="skills">
           <h2 class="page__heading"><span>03.</span> Skills</h2>
           <div class="skills__content">
             <h2 class="sub__heading">Technologies I work with</h2>
             <div class="skills__box">
-              <div class="box html">
+              <div class="box html" data-tilt="">
                 <img src="/html.6f202942.svg" alt="html">
                 <p>HTML5</p>
               </div>
-              <div class="box css">
+              <div class="box css" data-tilt="">
                 <img src="/css.a6ec88d1.svg" alt="css">
                 <p>CSS3</p>
               </div>
@@ -115,14 +121,14 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- End of skills section -->
         <!-- projects section -->
-        <div class="slide projects" id="projects">
+        <section class="slide projects" id="projects">
           <h2 class="page__heading"><span>04.</span> Projects</h2>
           <div class="project__container">
-            <div class="card">
+            <div class="card" data-tilt="">
               <div class="img__box">
                 <img src="/foodie.cb89d22a.png" alt="foodie" height="200px">
               </div>
@@ -207,11 +213,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- end of projects section -->
 
         <!-- contact section -->
-        <div class="slide contact" id="contact">
+        <section class="slide contact" id="contact">
           <h2 class="page__heading"><span>05.</span> What's next ?</h2>
           <div class="contact__body">
             <div class="get__in__touch">
@@ -238,11 +244,15 @@
               <p>All Right Reserved &copy; 2020</p>
             </div>
           </div>
-        </div>
+        </section>
         <!-- end of contact section -->
       </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>setTimeout(function () {
+  $(".loader__bg").fadeToggle();
+}, 2000);</script>
     <script src="/particles.c7cea895.js"></script>
     <script src="/app.c3f9f951.js"></script>
     <script src="/js.00a46daa.js"></script>

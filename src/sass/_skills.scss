@@ -2,7 +2,7 @@
   font-family: "Poppins";
   letter-spacing: 0.1rem;
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
   font-size: 1.7rem;
 }
 .skills {
@@ -14,11 +14,19 @@
       justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap;
+      // @include border;
       padding: 20px;
 
       .box {
-        margin: 2rem 3.5rem;
+        margin: 1.5rem 2rem;
         text-align: center;
+        @include transition;
+        padding: 20px;
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+        }
 
         p {
           font-size: 1rem;

@@ -1118,7 +1118,41 @@ var _typed = _interopRequireDefault(require("typed.js/src/typed"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// Toggling Humburger
+// Custom cursor
+var mouseCursor = document.querySelector(".cursor");
+window.addEventListener("mousemove", function (e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px"; // console.log(list);
+});
+var linksGrow = [];
+linksGrow.push(document.querySelector(".burger"));
+var projectLinks = document.querySelectorAll(".view abbr");
+projectLinks.forEach(function (link) {
+  linksGrow.push(link);
+});
+var skills = document.querySelectorAll(".box");
+skills.forEach(function (link) {
+  linksGrow.push(link);
+});
+var socialLinks = document.querySelectorAll(".social__links a");
+socialLinks.forEach(function (link) {
+  linksGrow.push(link);
+}); // linksGrow.push("akdjf");
+
+var navLinks = document.querySelectorAll(".list__item");
+navLinks.forEach(function (link) {
+  linksGrow.push(link);
+}); // console.log(linksGrow);
+
+linksGrow.forEach(function (list) {
+  list.addEventListener("mouseleave", function () {
+    mouseCursor.classList.remove("grow");
+  });
+  list.addEventListener("mouseover", function () {
+    mouseCursor.classList.add("grow");
+  });
+}); // Toggling Humburger
+
 var menuBtn = document.querySelector(".burger");
 menuBtn.addEventListener("click", function () {
   menuBtn.classList.toggle("active");
@@ -1159,7 +1193,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49852" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49727" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

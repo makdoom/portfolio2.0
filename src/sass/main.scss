@@ -18,6 +18,74 @@ body {
   color: #ffff;
   font-family: "Roboto mono";
   box-sizing: border-box;
+  cursor: none;
+}
+
+.loader__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $primary_background;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+      45deg,
+      transparent,
+      transparent 40%,
+      $primary_color
+    );
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      right: 6px;
+      bottom: 6px;
+      background: $primary_background;
+      border-radius: 50%;
+      z-index: 1000;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: $primary_background;
+      background: linear-gradient(
+        45deg,
+        transparent,
+        transparent 40%,
+        $primary_color
+      );
+      border-radius: 50%;
+      z-index: 1;
+      filter: blur(20px);
+    }
+
+    @keyframes loader {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
 
 ::-webkit-scrollbar {
@@ -30,6 +98,41 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+[data-scroll] {
+  transition: all 0.2s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+// [data-scroll="out"] {
+//   opacity: 0;
+//   transform: translateX(-200px);
+// }
+// Custom cursor
+.cursor {
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid $primary_color;
+  pointer-events: none;
+  z-index: 500;
+  transition: all 0.3s ease-in-out;
+  transition-duration: 200ms;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+}
+
+.grow {
+  transform: scale(2);
+  border: 1px solid $primary_color;
+  background: transparent;
+  // z-index: ;
 }
 
 .container {
@@ -182,8 +285,9 @@ body {
       padding: 0 2rem;
 
       a {
-        margin: 2rem 0 !important;
-        padding: 0.5rem 1.8rem !important;
+        padding: 12px 30px !important;
+        font-size: 0.9rem !important;
+        margin: 2.5rem 0 !important;
       }
     }
 
@@ -284,7 +388,7 @@ body {
       right: 25% !important;
       .icons {
         a {
-          margin: 0.8rem !important;
+          margin: 0.9rem !important;
         }
       }
     }
