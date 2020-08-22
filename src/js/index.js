@@ -1,6 +1,32 @@
 import "../sass/main.scss";
 import Typed from "typed.js/src/typed";
+import lax from "lax.js";
 
+window.onload = function () {
+  lax.setup(); // init
+
+  window.requestAnimationFrame();
+  // let outerContainer = document.querySelector(".outer__container");
+  // const updateLax = () => {
+  //   lax.update(outerContainer.scrollTop);
+  //   window.requestAnimationFrame(updateLax);
+  // };
+
+  // window.requestAnimationFrame(updateLax);
+};
+// window.onload = () => {
+//   lax.setup();
+//   let outerContainer = document.querySelector(".outer__container");
+//   outerContainer.addEventListener(
+//     "scroll",
+//     (e) => {
+//       // console.log(outerContainer.scrollTop);
+//       lax.update(outerContainer.scrollTop);
+//     },
+//     false
+//   );
+//   console.log("Lax setup");
+// };
 // Custom cursor
 let mouseCursor = document.querySelector(".cursor");
 window.addEventListener("mousemove", (e) => {

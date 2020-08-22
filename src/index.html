@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" href="./assets/font/favicon.ico" type="image/icon type" />
     <link rel="stylesheet" href="assets/font/flaticon.css" />
     <link
       rel="stylesheet"
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="outer__container" id="fullpage">
+    <div class="outer__container">
       <div class="container">
         <!-- Home section -->
         <div class="slide home" id="home">
@@ -59,7 +59,9 @@
               </div>
             </div>
             <div class="content">
-              <h1>Makdoom Shaikh</h1>
+              <h1 class="lax" data-lax-preset="spin fadeInOut">
+                Makdoom Shaikh
+              </h1>
               <p>
                 Hello there, I'am <span>Makdoom Shaikh</span>. I am a self
                 taught <span>Front End Developer</span> based in Mumbai.
@@ -328,6 +330,7 @@
         $(".loader__bg").fadeToggle();
       }, 2000);
     </script>
+    <!-- <script src="../node_modules/lax.js/lib/lax.min.js"></script> -->
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/index.js"></script>
