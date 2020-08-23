@@ -272,8 +272,9 @@
   font-family: "Poppins";
 }
 .about .about__body .content h1 {
+  font-size: 1.9rem;
   letter-spacing: 0.2rem;
-  margin: 8px 0;
+  margin: 10px 0;
 }
 .about .about__body .content p {
   font-size: 0.93rem;
@@ -596,15 +597,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-[data-scroll] {
-  transition: all 0.2s;
-}
-
-[data-scroll=in] {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .cursor {

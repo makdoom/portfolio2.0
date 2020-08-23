@@ -1,32 +1,14 @@
 import "../sass/main.scss";
 import Typed from "typed.js/src/typed";
-import lax from "lax.js";
 
-window.onload = function () {
-  lax.setup(); // init
+// Typing effect
+let typed = new Typed(".type", {
+  strings: ["Makdoom Shaikh", "Frontend Developer", "Programmer", "Developer"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true,
+});
 
-  window.requestAnimationFrame();
-  // let outerContainer = document.querySelector(".outer__container");
-  // const updateLax = () => {
-  //   lax.update(outerContainer.scrollTop);
-  //   window.requestAnimationFrame(updateLax);
-  // };
-
-  // window.requestAnimationFrame(updateLax);
-};
-// window.onload = () => {
-//   lax.setup();
-//   let outerContainer = document.querySelector(".outer__container");
-//   outerContainer.addEventListener(
-//     "scroll",
-//     (e) => {
-//       // console.log(outerContainer.scrollTop);
-//       lax.update(outerContainer.scrollTop);
-//     },
-//     false
-//   );
-//   console.log("Lax setup");
-// };
 // Custom cursor
 let mouseCursor = document.querySelector(".cursor");
 window.addEventListener("mousemove", (e) => {
@@ -70,11 +52,4 @@ const menuBtn = document.querySelector(".burger");
 menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("active");
   document.querySelector(".nav__list").classList.toggle("open");
-});
-// Typing effect
-let typed = new Typed(".type", {
-  strings: ["Makdoom Shaikh", "Frontend Developer", "Programmer", "Developer"],
-  typeSpeed: 100,
-  backSpeed: 60,
-  loop: true,
 });

@@ -4,7 +4,7 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html -p 3000",
+    "dev": "parcel src/index.html -p 5000",
     "build": "npm build src/index.html"
   },
   "author": "Makdoom Shaikh",
@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "lax.js": "^1.2.5",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "scroll-out": "^2.2.11",

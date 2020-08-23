@@ -100,18 +100,6 @@ body {
   left: 0;
 }
 
-[data-scroll] {
-  transition: all 0.2s;
-}
-
-[data-scroll="in"] {
-  opacity: 1;
-  transform: translateX(0);
-}
-// [data-scroll="out"] {
-//   opacity: 0;
-//   transform: translateX(-200px);
-// }
 // Custom cursor
 .cursor {
   border-radius: 50%;
