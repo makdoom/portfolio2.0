@@ -1,6 +1,3 @@
-.home {
-  width: 111vw;
-}
 .home__content {
   height: 100%;
   width: 100%;
@@ -28,8 +25,10 @@
 
     .resume {
       border: none;
+      display: inline-block;
       outline: none;
       background: transparent;
+      text-decoration: none;
       border: 2px solid $primary_color;
       padding: 15px 40px;
       border-radius: 30px;

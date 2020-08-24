@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "My Portfolio",
+  "description": "Portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html -p 5000",

@@ -142,10 +142,6 @@
   width: 100%;
 }
 
-.home {
-  width: 111vw;
-}
-
 .home__content {
   height: 100%;
   width: 100%;
@@ -172,8 +168,10 @@
 }
 .home__content .header .resume {
   border: none;
+  display: inline-block;
   outline: none;
   background: transparent;
+  text-decoration: none;
   border: 2px solid #51ffff;
   padding: 15px 40px;
   border-radius: 30px;
@@ -228,6 +226,9 @@
   width: 500px;
 }
 
+.about {
+  margin-left: 10rem;
+}
 .about .about__body {
   width: 100vw;
   height: 80vh;
@@ -249,6 +250,7 @@
 .about .about__body .portrait img {
   width: 100%;
   height: 100%;
+  padding-left: 10px;
   -webkit-filter: drop-shadow(5px 5px 25px rgba(71, 71, 71, 0.8));
   filter: drop-shadow(5px 5px 25px rgba(71, 71, 71, 0.8));
 }
@@ -297,6 +299,9 @@
   font-size: 1.7rem;
 }
 
+.skills {
+  margin-left: 10rem;
+}
 .skills .skills__content {
   height: 80%;
 }
@@ -308,13 +313,14 @@
   padding: 20px;
 }
 .skills .skills__content .skills__box .box {
-  margin: 1.5rem 2rem;
+  margin: 1.5rem 1rem;
   text-align: center;
   transition: all 0.3s ease-in-out;
   padding: 20px;
 }
 .skills .skills__content .skills__box .box:hover {
   transform: scale(1.1);
+  background: #323252;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 .skills .skills__content .skills__box .box p {
@@ -328,6 +334,7 @@
 }
 
 .projects {
+  margin-left: 10rem;
   width: 250vw !important;
 }
 .projects .project__container {
@@ -524,6 +531,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 body {
@@ -536,23 +544,33 @@ body {
 
 .loader__bg {
   position: absolute;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: #222238;
-  z-index: 99999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.loader__bg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
 .loader__bg .loader {
   position: relative;
-  width: 100px;
-  height: 100px;
+  height: 120px;
+  width: 120px;
   background: linear-gradient(45deg, transparent, transparent 40%, #51ffff);
   border-radius: 50%;
-  animation: loader 2s linear infinite;
+  animation: loader 1s linear infinite;
 }
 .loader__bg .loader:before {
   content: "";
@@ -576,7 +594,7 @@ body {
   background: linear-gradient(45deg, transparent, transparent 40%, #51ffff);
   border-radius: 50%;
   z-index: 1;
-  filter: blur(20px);
+  filter: blur(30px);
 }
 @keyframes loader {
   0% {
@@ -592,6 +610,8 @@ body {
 }
 
 #particles-js {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -625,7 +645,7 @@ body {
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  width: 650vw;
+  width: 660vw;
 }
 
 .slide {
@@ -642,6 +662,8 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -690,6 +712,7 @@ body {
   }
 
   .about {
+    margin-left: 0;
     height: 140vh;
   }
   .about .about__body {
@@ -718,6 +741,7 @@ body {
   }
 
   .skills {
+    margin-left: 0;
     height: 120vh;
     margin-top: 10rem;
   }
@@ -735,10 +759,11 @@ body {
     padding: 0px;
   }
   .skills .skills__content .skills__box .box {
-    margin: 2rem 1.5rem;
+    margin: 2rem 1rem;
   }
 
   .projects {
+    margin-left: 0;
     margin-top: 5rem;
     width: 100vw !important;
     height: 150vh;
@@ -803,12 +828,13 @@ body {
     font-size: 1.95rem;
   }
   .home__content .header .resume {
-    padding: 15px 28px;
+    padding: 10px 25px;
     margin-top: 30px;
     font-size: 0.8rem;
   }
 
   .about {
+    margin-left: 0;
     margin-top: 5rem;
     height: 185vh;
   }
@@ -821,7 +847,8 @@ body {
   }
 
   .skills {
-    height: 110vh;
+    margin-left: 0;
+    height: 160vh;
   }
 
   .projects {
@@ -830,7 +857,6 @@ body {
   }
   .projects .project__container {
     padding: 2.5rem 0;
-    height: 200vh;
   }
 
   .contact {

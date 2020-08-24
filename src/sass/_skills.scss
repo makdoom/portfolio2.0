@@ -6,6 +6,7 @@
   font-size: 1.7rem;
 }
 .skills {
+  margin-left: 10rem;
   .skills__content {
     height: 80%;
 
@@ -14,17 +15,17 @@
       justify-content: space-evenly;
       align-items: center;
       flex-wrap: wrap;
-      // @include border;
       padding: 20px;
 
       .box {
-        margin: 1.5rem 2rem;
+        margin: 1.5rem 1rem;
         text-align: center;
         @include transition;
         padding: 20px;
 
         &:hover {
           transform: scale(1.1);
+          background: #323252;
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
         }
 

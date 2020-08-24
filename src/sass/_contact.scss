@@ -1,5 +1,4 @@
 .contact {
-  //   @include border;
   width: 111vw;
   margin-right: 0;
   margin-left: 5rem;
@@ -8,7 +7,6 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    // @include border;
 
     .get__in__touch {
       position: absolute;
@@ -16,7 +14,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      //   @include border;
 
       h1 {
         font-size: 2.5rem;

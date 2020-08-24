@@ -14,6 +14,7 @@
   <body>
     <div class="loader__bg">
       <div class="loader"></div>
+      <img src="./assets/font/favicon.ico" alt="" />
     </div>
     <!-- Custom cursor -->
     <div class="cursor"></div>
@@ -43,7 +44,9 @@
               <h3 class="hello">Hello World,</h3>
               <p class="typer">I'm <span class="type"></span></p>
 
-              <button class="resume">Resume</button>
+              <a target="_blank" href="assets/Resume.pdf" class="resume"
+                >Resume</a
+              >
             </div>
           </div>
         </div>
@@ -108,6 +111,10 @@
                 <img src="./assets/SVG/sass.svg" alt="sass" />
                 <p>SASS</p>
               </div>
+              <div class="box jquery">
+                <img src="./assets/SVG/jquery.svg" alt="jquery" />
+                <p>JQuery</p>
+              </div>
               <div class="box bootstap">
                 <img src="./assets/SVG/bootstrap.svg" alt="bootstrap" />
                 <p>Bootstrap</p>
@@ -123,6 +130,10 @@
               <div class="box node">
                 <img src="./assets/SVG/nodejs.svg" alt="node" />
                 <p>Nodejs</p>
+              </div>
+              <div class="box git">
+                <img src="./assets/SVG/git.svg" alt="git" />
+                <p>Git</p>
               </div>
             </div>
           </div>
@@ -325,14 +336,13 @@
     </div>
 
     <script src="./js/particles.js"></script>
-    <script src="../node_modules/lax.js/lib/lax.min.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       setTimeout(function () {
         $(".loader__bg").fadeToggle();
-      }, 2000);
+      }, 2500);
     </script>
   </body>
 </html>

@@ -11,6 +11,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 body {
@@ -23,20 +24,30 @@ body {
 
 .loader__bg {
   position: absolute;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: $primary_background;
-  z-index: 99999;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+  }
   .loader {
     position: relative;
-    width: 100px;
-    height: 100px;
+    height: 120px;
+    width: 120px;
     background: linear-gradient(
       45deg,
       transparent,
@@ -44,7 +55,7 @@ body {
       $primary_color
     );
     border-radius: 50%;
-    animation: loader 2s linear infinite;
+    animation: loader 1s linear infinite;
 
     &:before {
       content: "";
@@ -57,7 +68,6 @@ body {
       border-radius: 50%;
       z-index: 1000;
     }
-
     &:after {
       content: "";
       position: absolute;
@@ -74,7 +84,7 @@ body {
       );
       border-radius: 50%;
       z-index: 1;
-      filter: blur(20px);
+      filter: blur(30px);
     }
 
     @keyframes loader {
@@ -93,6 +103,8 @@ body {
 }
 
 #particles-js {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -128,7 +140,7 @@ body {
   flex-direction: row;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  width: 650vw;
+  width: 660vw;
 }
 
 .slide {
@@ -144,6 +156,8 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -192,6 +206,7 @@ body {
     }
   }
   .about {
+    margin-left: 0;
     height: 140vh;
 
     .about__body {
@@ -226,7 +241,7 @@ body {
   }
 
   .skills {
-    // @include border;
+    margin-left: 0;
     height: 120vh;
     margin-top: 10rem;
 
@@ -242,19 +257,17 @@ body {
 
       .skills__box {
         justify-content: center;
-        // align-items: center;
-        // flex-wrap: wrap;
         padding: 0px;
 
         .box {
-          margin: 2rem 1.5rem;
-          // text-align: center;
+          margin: 2rem 1rem;
         }
       }
     }
   }
 
   .projects {
+    margin-left: 0;
     margin-top: 5rem;
     width: 100vw !important;
     height: 150vh;
@@ -263,7 +276,6 @@ body {
   .contact {
     margin: 0;
     padding: 0;
-    // @include border;
     margin-top: 20rem;
     height: 100vh;
     width: 100vw;
@@ -323,13 +335,14 @@ body {
       }
 
       .resume {
-        padding: 15px 28px;
+        padding: 10px 25px;
         margin-top: 30px;
         font-size: 0.8rem;
       }
     }
   }
   .about {
+    margin-left: 0;
     margin-top: 5rem;
     height: 185vh;
 
@@ -344,17 +357,15 @@ body {
   }
 
   .skills {
-    height: 110vh;
+    margin-left: 0;
+    height: 160vh;
   }
   .projects {
     margin: 0;
     margin-top: 20rem;
-    // width: 100vw !important;
 
     .project__container {
       padding: 2.5rem 0;
-      // @include border;
-      height: 200vh;
     }
   }
 

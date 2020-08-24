@@ -17,19 +17,6 @@
     cursor: pointer;
     box-sizing: border-box;
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   transform: translate(-50%, -50%);
-    //   width: 0;
-    //   height: 0;
-    //   box-sizing: border-box;
-    //   border-radius: 50%;
-    //   animation: animate 2s linear infinite;
-    // }
-
     &::after {
       content: "";
       position: absolute;
@@ -124,7 +111,6 @@
     }
 
     .list {
-      // width: 300px;
       .list__item {
         list-style: none;
         text-align: center;
