@@ -221,15 +221,11 @@ body {
           width: 220px;
           height: 290px;
           margin: 0 auto;
-
-          &:before {
-            border: 5px solid $primary_color;
-          }
         }
       }
 
       .content {
-        margin: 3rem auto;
+        margin: 3.5rem auto;
         text-align: justify;
         width: 100%;
 
@@ -270,7 +266,7 @@ body {
     margin-left: 0;
     margin-top: 5rem;
     width: 100vw !important;
-    height: 150vh;
+    height: 110vh;
   }
 
   .contact {
@@ -314,6 +310,9 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .cursor {
+    display: none;
+  }
   .navbar {
     right: 15px;
   }
@@ -335,7 +334,7 @@ body {
       }
 
       .resume {
-        padding: 10px 25px;
+        padding: 13px 30px;
         margin-top: 30px;
         font-size: 0.8rem;
       }
@@ -351,8 +350,7 @@ body {
     }
 
     .content p {
-      padding: 8px;
-      font-size: 1rem !important;
+      font-size: 1.1rem !important;
     }
   }
 
@@ -384,7 +382,7 @@ body {
 
     .social__links {
       bottom: 9% !important;
-      right: 25% !important;
+      right: 24% !important;
       .icons {
         a {
           margin: 0.9rem !important;
