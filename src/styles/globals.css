@@ -1,9 +1,16 @@
-html,
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto+Mono:wght@400;600&family=Roboto:wght@700&display=swap");
+
+:root {
+  --primary-background: #000;
+  --primary-font-color: #fff;
+}
+
+*,
+html {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -11,6 +18,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  background: var(--primary-background);
+  color: var(--primary-font-color);
+  font-family: "Inter", sans-serif;
 }

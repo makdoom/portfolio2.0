@@ -1,0 +1,12 @@
+.main {
+  padding-left: 13%;
+}
+
+.section__one,
+.section__two,
+.section__three,
+.section__four,
+.section__five {
+  height: 100vh;
+  border: 1px solid #fff;
+}

@@ -1,0 +1,52 @@
+.sidebar {
+  width: 13%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-font-color);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid #000;
+}
+
+.sidebar .logo,
+.navigation__top {
+  flex: 0.15;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .nav__links {
+  flex: 0.7;
+  width: 100%;
+}
+
+.sidebar .nav__links > ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.link > a {
+  display: inline-block;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+
+.link > a > span {
+  font-family: "Inter";
+  color: #fff;
+}
+
+.link > a.active {
+  background-color: red;
+}
