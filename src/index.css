@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto+Mono:wght@300;400&family=Roboto:wght@700&display=swap");
+
+:root {
+  --primary-background-color: #141414;
+  --primary-font-color: #fff;
+  --secondary-font-color: #aaa;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  /* background: var(--primary-background-color);
+  color: var(--primary-font-color); */
+  /* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
