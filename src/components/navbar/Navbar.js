@@ -2,12 +2,12 @@ import React from "react";
 import "./navbar.css";
 
 const Navbar = () => {
+  // Add .active class on click
   const addActive = (e) => {
     const links = document.querySelectorAll(".link");
     links.forEach((link) => {
-      if ([...link.classList.includes("active")]) {
+      if ([...link.classList.includes("active")])
         link.classList.remove("active");
-      }
     });
     e.target.parentElement.parentElement.classList.add("active");
   };
@@ -49,7 +49,9 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navigation__top">TOP</div>
+      <div className="navigation__top">
+        <span class="material-icons up">south</span>
+      </div>
     </div>
   );
 };

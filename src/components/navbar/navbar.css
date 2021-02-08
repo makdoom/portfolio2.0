@@ -19,7 +19,6 @@
 }
 
 .navbar__links ul {
-  border: 1px solid #fff;
   height: 100%;
   width: 100%;
   display: flex;
@@ -51,4 +50,10 @@
 
 .link.active .link__name {
   opacity: 1;
+}
+
+.material-icons.up {
+  color: var(--secondary-font-color);
+  font-size: 2rem;
+  cursor: pointer;
 }
