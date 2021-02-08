@@ -16,8 +16,9 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  /* background: var(--primary-background-color);
-  color: var(--primary-font-color); */
+  background: var(--primary-background-color);
+  color: var(--primary-font-color);
+  line-height: 1.5;
   /* font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace; */
 }

@@ -1,5 +1,5 @@
 .navbar {
-  border: 1px solid #000;
+  border: 1px solid #fff;
   width: 13%;
   height: 100vh;
   display: flex;
@@ -19,11 +19,36 @@
 }
 
 .navbar__links ul {
-  border: 1px solid #000;
+  border: 1px solid #fff;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.link > a {
+  color: var(--secondary-font-color);
+  letter-spacing: 0.05rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.link.active > a {
+  color: var(--primary-font-color);
+}
+
+.link .link__number {
+  font-family: "Roboto Mono", monospace;
+}
+
+.link .link__name {
+  opacity: 0;
+}
+
+.link.active .link__name {
+  opacity: 1;
 }
