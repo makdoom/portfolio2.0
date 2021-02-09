@@ -1,4 +1,49 @@
 .intro__page {
+  position: relative;
   width: 100%;
   min-height: 100vh;
+  /* border: 1px solid #fff; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.signature__background {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  background: #141414;
+  z-index: -1;
+  right: 0;
+}
+
+.intro__tagline {
+  padding: 10px;
+}
+
+.hello {
+  width: 50%;
+}
+
+.quote {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.8rem;
+}
+
+.quote span {
+  background: linear-gradient(to right, #eb04ff, #ff4f00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.signature {
+  border: 1px solid #fff;
+  width: 45%;
+  height: 60vh;
+}
+
+.signature img {
+  width: 100%;
+  height: 100%;
 }
