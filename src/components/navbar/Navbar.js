@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../assets/logosvg.svg";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -14,7 +15,9 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar__logo">LOGO</div>
+      <div className="navbar__logo">
+        <img src={logo} className="logo" alt="logo" />
+      </div>
       <div className="navbar__links">
         <ul>
           <li className="link active" onClick={addActive}>

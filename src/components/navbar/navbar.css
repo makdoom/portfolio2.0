@@ -1,5 +1,6 @@
 .navbar {
-  border: 1px solid #fff;
+  position: fixed;
+  /* border: 1px solid #fff; */
   width: 13%;
   height: 100vh;
   display: flex;
@@ -8,11 +9,28 @@
   align-items: center;
 }
 
+.navbar::after {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  content: "";
+  width: 1px;
+  height: 100vh;
+  background: rgba(170, 170, 170, 0.4);
+}
+
 .navbar__logo,
 .navigation__top {
   flex: 0.15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.navbar__logo .logo {
+  height: 50%;
+  width: 50%;
+}
 .navbar__links {
   width: 100%;
   flex: 0.7;
@@ -38,6 +56,26 @@
 
 .link.active > a {
   color: var(--primary-font-color);
+}
+
+.link {
+  width: 100%;
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  top: 0;
+  left: 99%;
+  background: #fff;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.link.active::after {
+  opacity: 1;
 }
 
 .link .link__number {
