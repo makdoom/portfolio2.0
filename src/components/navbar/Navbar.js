@@ -5,12 +5,29 @@ import "./navbar.css";
 const Navbar = () => {
   // Add .active class on click
   const addActive = (e) => {
+    const navbarLinks = document.querySelector(".navbar__links");
+    const burger = document.querySelector(".burger");
     const links = document.querySelectorAll(".link");
     links.forEach((link) => {
       if ([...link.classList.includes("active")])
         link.classList.remove("active");
     });
     e.target.parentElement.parentElement.classList.add("active");
+
+    // hiding navlink
+    setTimeout(() => {
+      navbarLinks.classList.remove("active");
+      burger.classList.remove("toggle");
+    }, 300);
+  };
+
+  // Show navabr
+  const showNav = (e) => {
+    const burger = document.querySelector(".burger");
+    const navbarLinks = document.querySelector(".navbar__links");
+
+    burger.classList.toggle("toggle");
+    navbarLinks.classList.toggle("active");
   };
 
   return (
@@ -52,8 +69,13 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div className="burger" onClick={showNav}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
       <div className="navigation__top">
-        <span class="material-icons up">south</span>
+        <span className="material-icons up">south</span>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
-  /* border: 1px solid #fff; */
   width: 13%;
+  min-height: 8vh;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
 }
 
 .navbar::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 100%;
@@ -22,6 +23,7 @@
 .navbar__logo,
 .navigation__top {
   flex: 0.15;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,4 +96,85 @@
   color: var(--secondary-font-color);
   font-size: 2rem;
   cursor: pointer;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  border-radius: 10px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease-in;
+}
+
+.burger .line1 {
+  margin-bottom: 8px;
+  width: 10px;
+}
+.burger .line2 {
+  margin-bottom: 8px;
+  width: 20px;
+}
+.burger .line3 {
+  width: 30px;
+}
+
+.toggle .line1 {
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+.toggle .line2 {
+  margin-bottom: 0;
+  width: 30px;
+  transform: rotate(-45deg) translate(4px, 2px);
+}
+
+.toggle .line3 {
+  width: 30px;
+  transform: rotate(45deg) translate(1px, -5px);
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .navbar__links {
+    position: absolute;
+    top: 100vh;
+    height: 90vh;
+    left: 0;
+    transition: all 0.4s ease;
+  }
+
+  .navbar__links.active {
+    top: 10vh;
+  }
+
+  .burger {
+    display: block;
+  }
+  .navigation__top {
+    display: none;
+  }
+
+  .navbar__logo .logo {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar__logo .logo {
+    height: 80%;
+    width: 80%;
+  }
 }
