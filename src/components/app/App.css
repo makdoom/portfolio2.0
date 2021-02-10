@@ -11,3 +11,9 @@
   right: 0;
   width: 85%;
 }
+
+@media only screen and (max-width: 768px) {
+  .main__content {
+    width: 100%;
+  }
+}

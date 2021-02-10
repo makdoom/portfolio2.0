@@ -6,6 +6,7 @@ const App = () => {
   return (
     <div className="app">
       <Navbar />
+
       <div className="main__content">
         <Intro />
       </div>

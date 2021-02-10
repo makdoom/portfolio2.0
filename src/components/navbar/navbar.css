@@ -17,7 +17,7 @@
   content: "";
   width: 1px;
   height: 100vh;
-  background: rgba(170, 170, 170, 0.4);
+  background: rgba(170, 170, 170, 0.2);
 }
 
 .navbar__logo,
@@ -139,6 +139,7 @@
 
 @media only screen and (max-width: 768px) {
   .navbar {
+    z-index: 3;
     width: 100%;
     height: 10vh;
     flex-direction: row;
@@ -148,19 +149,22 @@
   }
 
   .navbar__links {
+    background: var(--primary-background-color);
     position: absolute;
     top: 100vh;
-    height: 90vh;
+    height: 100vh;
     left: 0;
     transition: all 0.4s ease;
   }
 
   .navbar__links.active {
-    top: 10vh;
+    top: 0vh;
   }
 
   .burger {
     display: block;
+    z-index: 5;
+    padding-right: 10px;
   }
   .navigation__top {
     display: none;

@@ -23,12 +23,12 @@
 }
 
 .hello {
-  width: 50%;
+  width: 45%;
 }
 
 .quote {
   font-family: "Roboto", sans-serif;
-  font-size: 3.8rem;
+  font-size: 4rem;
 }
 
 .quote span {
@@ -38,12 +38,64 @@
   -webkit-text-fill-color: transparent;
 }
 .signature {
-  border: 1px solid #fff;
-  width: 45%;
-  height: 60vh;
+  /* border: 1px solid #fff; */
+  z-index: 2;
+  width: 75%;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease;
+  transition-delay: 1s;
 }
 
-.signature img {
+.signature svg {
+  /* border: 1px solid #fff; */
   width: 100%;
   height: 100%;
+}
+
+.signature svg .text {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: animate 6s ease 1 forwards;
+}
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.shadow {
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(236, 26, 243, 0.7));
+  filter: drop-shadow(3px 3px 2px rgba(70, 69, 70, 0.9));
+}
+
+@media only screen and (max-width: 768px) {
+  .intro__page {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .signature {
+    width: 60%;
+    height: 60%;
+    margin-top: 4rem;
+  }
+
+  .intro__tagline {
+    padding: 0 2rem;
+  }
+  .quote {
+    font-size: 3.7rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro__tagline {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .quote {
+    font-size: 2.5rem;
+  }
 }
