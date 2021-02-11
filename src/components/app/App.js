@@ -1,5 +1,6 @@
 import Intro from "../intro/Intro";
 import Navbar from "../navbar/Navbar";
+import About from "../about/About";
 import "./App.css";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
 
       <div className="main__content">
         <Intro />
+        <About />
       </div>
     </div>
   );
