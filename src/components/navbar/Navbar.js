@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../assets/logosvg.svg";
+import { BsArrowDown } from "react-icons/bs";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -75,7 +76,8 @@ const Navbar = () => {
         <div className="line3"></div>
       </div>
       <div className="navigation__top">
-        <span className="material-icons up">south</span>
+        {/* <span className="material-icons up">south</span> */}
+        <BsArrowDown />
       </div>
     </div>
   );

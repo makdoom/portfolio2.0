@@ -3,7 +3,7 @@
 :root {
   --primary-background-color: #0f0f0f;
   --primary-font-color: #fff;
-  --secondary-font-color: #aaa;
+  --secondary-font-color: #bbb;
 }
 
 *,
@@ -29,4 +29,19 @@ a {
 
 li {
   list-style: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
 }

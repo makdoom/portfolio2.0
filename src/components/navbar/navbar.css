@@ -92,7 +92,7 @@
   opacity: 1;
 }
 
-.material-icons.up {
+.navigation__top svg {
   color: var(--secondary-font-color);
   font-size: 2rem;
   cursor: pointer;
