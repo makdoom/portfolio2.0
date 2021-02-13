@@ -24,7 +24,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="about">
+    <section id="about" className="about__page">
       <header>
         <h1 className="heading">About</h1>
       </header>
@@ -38,7 +38,7 @@ const About = () => {
             who don't have any Computer Science degree such as people that have
             either taught themselves or have gone to bootcamps, to know more
             about me feel free to download my Resume. <br />
-            <a href="#" className="resume">
+            <a href="#resume" className="resume">
               <span>Resume</span>
               <IoIosArrowForward />
             </a>
@@ -46,7 +46,7 @@ const About = () => {
         </div>
         <div className="image">image</div>
       </div>
-    </div>
+    </section>
   );
 };
 

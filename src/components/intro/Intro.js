@@ -4,13 +4,12 @@ import "./intro.css";
 
 const Intro = () => {
   return (
-    <div id="intro" className="intro__page">
+    <section id="intro" className="intro__page">
       <div className="signature__background"></div>
       <div className="scroll__down">
         <div className="indicator">
           <span></span>
           <span></span>
-          {/* <span></span> */}
         </div>
       </div>
 
@@ -21,7 +20,7 @@ const Intro = () => {
         </h1>
       </div>
 
-      <div className=" signature">
+      <div className="signature">
         <svg
           className="shadow"
           width="173mm"
@@ -59,7 +58,7 @@ const Intro = () => {
           />
         </svg>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -29,7 +29,6 @@
   position: relative;
   width: 20px;
   height: 20px;
-  /* background: #ccc; */
   transform: rotate(45deg);
 }
 
@@ -80,6 +79,7 @@
 
 .intro__tagline {
   padding: 10px;
+  padding-left: 1rem;
 }
 
 .hello {
@@ -147,6 +147,10 @@
   }
   .quote {
     font-size: 3.7rem;
+  }
+  .scroll__down .indicator {
+    width: 15px;
+    height: 15px;
   }
 }
 

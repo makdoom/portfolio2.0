@@ -1,5 +1,4 @@
-.about {
-  padding: 10px;
+.about__page {
   margin-top: 35vh;
   width: 100%;
   display: flex;
@@ -14,8 +13,7 @@
   padding: 0;
   font-size: 3rem;
   letter-spacing: 0.1rem;
-  margin: 1rem 0;
-  padding-right: 1rem;
+  margin: 1rem;
   display: inline-block;
   transition: all 0.4s ease-in;
   transform-origin: left;
@@ -65,6 +63,7 @@
   font-size: 1.3rem;
   color: var(--secondary-font-color);
   letter-spacing: 0.01rem;
+  margin-left: 1rem;
 }
 
 .content .resume {
@@ -81,4 +80,33 @@
 
 .resume svg {
   margin-left: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume:hover > svg {
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 768px) {
+  .about__page {
+    padding: 0;
+    width: 100%;
+  }
+  .heading {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+
+  .about__body .content {
+    width: 70%;
+  }
+
+  .content > p {
+    font-size: 1rem;
+  }
+
+  .content .resume {
+    display: inline-flex;
+    padding: 8px 18px;
+  }
 }

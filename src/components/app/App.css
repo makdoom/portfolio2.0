@@ -1,19 +1,32 @@
 .app {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   display: flex;
 }
 
-.main__content {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 85%;
+.fixed__navbar {
+  /* border: 1px solid #000; */
+  position: fixed;
+  height: 100vh;
+  width: 12%;
+}
+
+.main__body {
+  margin-left: 14%;
+  width: 88%;
 }
 
 @media only screen and (max-width: 768px) {
-  .main__content {
+  .fixed__navbar {
+    z-index: 3;
+    width: 100%;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__body {
+    margin-left: 0;
     width: 100%;
   }
 }
