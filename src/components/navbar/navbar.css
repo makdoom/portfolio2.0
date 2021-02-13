@@ -83,10 +83,13 @@
 }
 
 .link .link__name {
+  transform: translateY(20px);
+  transition: all 0.4s ease-in;
   opacity: 0;
 }
 
 .link.active .link__name {
+  transform: translateX(0px);
   opacity: 1;
 }
 

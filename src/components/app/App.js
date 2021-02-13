@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 import Intro from "../intro/Intro";
 import Navbar from "../navbar/Navbar";
 import About from "../about/About";
+import Skills from "../skills/Skills";
 import "./App.css";
-import { useEffect } from "react";
 
 const App = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const App = () => {
       <div className="main__body">
         <Intro />
         <About />
+        <Skills />
       </div>
     </div>
   );

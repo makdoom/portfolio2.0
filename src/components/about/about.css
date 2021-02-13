@@ -1,5 +1,5 @@
 .about__page {
-  margin-top: 35vh;
+  margin-top: 25vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   padding: 0;
   font-size: 3rem;
   letter-spacing: 0.1rem;
-  margin: 1rem;
+  margin: 1rem 0 1rem 2rem;
   display: inline-block;
   transition: all 0.4s ease-in;
   transform-origin: left;
@@ -38,7 +38,7 @@
 
 .heading[data-scroll="in"]:before {
   transform: scaleX(0);
-  transition-delay: 0.3s;
+  transition-delay: 0.4s;
 }
 
 .about__body {
@@ -60,10 +60,10 @@
 }
 
 .content > p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--secondary-font-color);
   letter-spacing: 0.01rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .content .resume {
@@ -103,6 +103,7 @@
 
   .content > p {
     font-size: 1rem;
+    margin-left: 1rem;
   }
 
   .content .resume {

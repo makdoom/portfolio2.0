@@ -1,0 +1,74 @@
+.skills__page {
+  margin-top: 25vh;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills__content {
+  /* padding-left: 1rem; */
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills__content .text {
+  font-size: 1.2rem;
+  /* text-align: justify; */
+  color: var(--secondary-font-color);
+  letter-spacing: 0.01rem;
+  margin-left: 2rem;
+}
+
+.skills__content .text span {
+  background: linear-gradient(to right, #eb04ff, #ff4f00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills__globe {
+  width: 55%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__globe .globe__canvas {
+  height: 65%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills__page {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .skills__content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .skills__content .text {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+
+  .skills__globe {
+    width: 100%;
+  }
+
+  .skills__globe .globe__canvas > svg {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -9,10 +9,10 @@ const Navbar = () => {
     const navbarLinks = document.querySelector(".navbar__links");
     const burger = document.querySelector(".burger");
     const links = document.querySelectorAll(".link");
-    links.forEach((link) => {
-      if ([...link.classList.includes("active")])
-        link.classList.remove("active");
-    });
+    // links.forEach((link) => {
+    //   if ([...link.classList.includes("active")])
+    //     link.classList.remove("active");
+    // });
     e.target.parentElement.parentElement.classList.add("active");
 
     // hiding navlink
@@ -50,19 +50,19 @@ const Navbar = () => {
               <span className="link__name">About</span>
             </a>
           </li>
-          <li className=" link" onClick={addActive}>
+          <li className="skills link" onClick={addActive}>
             <a href="#skills">
               <span className="link__number">03</span>
               <span className="link__name">Skills</span>
             </a>
           </li>
-          <li className=" link" onClick={addActive}>
+          <li className="projects link" onClick={addActive}>
             <a href="#projects">
               <span className="link__number">04</span>
               <span className="link__name">Projects</span>
             </a>
           </li>
-          <li className=" link" onClick={addActive}>
+          <li className="contact link" onClick={addActive}>
             <a href="#contact">
               <span className="link__number">05</span>
               <span className="link__name">What's next ?</span>
