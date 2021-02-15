@@ -38,10 +38,10 @@ const Skills = () => {
     //Settings
     let settings = {
       entries: entries,
-      width: "95%",
-      height: "95%",
+      width: "90%",
+      height: "90%",
       radius: "100%",
-      radiusMin: 100,
+      radiusMin: 75,
       bgDraw: true,
       bgColor: "#0f0f0f",
       opacityOver: 2.0,
@@ -50,7 +50,7 @@ const Skills = () => {
       fov: 800,
       speed: 0.9,
       fontFamily: "Roboto Mono, monospace",
-      fontSize: "1.3em",
+      fontSize: "1.2em",
       fontColor: "#bbb",
       fontStretch: "normal",
     };

@@ -8,11 +8,6 @@ const Navbar = () => {
   const addActive = (e) => {
     const navbarLinks = document.querySelector(".navbar__links");
     const burger = document.querySelector(".burger");
-    const links = document.querySelectorAll(".link");
-    // links.forEach((link) => {
-    //   if ([...link.classList.includes("active")])
-    //     link.classList.remove("active");
-    // });
     e.target.parentElement.parentElement.classList.add("active");
 
     // hiding navlink
@@ -47,7 +42,7 @@ const Navbar = () => {
           <li className="about link" onClick={addActive}>
             <a href="#about">
               <span className="link__number">02</span>
-              <span className="link__name">About</span>
+              <span className="link__name">About me</span>
             </a>
           </li>
           <li className="skills link" onClick={addActive}>

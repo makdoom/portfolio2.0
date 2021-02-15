@@ -3,6 +3,7 @@ import Intro from "../intro/Intro";
 import Navbar from "../navbar/Navbar";
 import About from "../about/About";
 import Skills from "../skills/Skills";
+import Projects from "../projects/Projects";
 import "./App.css";
 
 const App = () => {
@@ -43,6 +44,7 @@ const App = () => {
         <Intro />
         <About />
         <Skills />
+        <Projects />
       </div>
     </div>
   );
