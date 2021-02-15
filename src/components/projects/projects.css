@@ -3,7 +3,6 @@
   padding-top: 5vh;
   min-height: 100vh;
   width: 100%;
-  /* border: 1px solid #fff; */
 }
 
 .heading {
@@ -12,7 +11,7 @@
   padding: 0;
   font-size: 3rem;
   letter-spacing: 0.1rem;
-  margin: 1rem 0 1rem 2rem;
+  margin: 1rem 0 1rem 1rem;
   display: inline-block;
   transition: all 0.4s ease-in;
   transform-origin: left;
@@ -47,5 +46,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform-style: preserve-3d;
+}
+
+@media only screen and (max-width: 768px) {
+  .projects__page {
+    margin-top: 20vh;
+    padding-top: 5vh;
+    min-height: 100vh;
+    width: 100%;
+  }
 }

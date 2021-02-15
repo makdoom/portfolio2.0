@@ -14,12 +14,6 @@ const Projects = () => {
         {projectData.map((project) => (
           <ProjectCard project={project} key={project.projectId} />
         ))}
-        {/* <ProjectCard />
-        <ProjectCard number="even" />
-        <ProjectCard />
-        <ProjectCard number="even" />
-        <ProjectCard />
-        <ProjectCard number="even" /> */}
       </div>
     </section>
   );
