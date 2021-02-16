@@ -19,7 +19,7 @@
 }
 
 .navbar__logo,
-.navigation__top {
+.scroll__to__top {
   flex: 0.15;
   width: 100%;
   display: flex;
@@ -93,12 +93,16 @@
   opacity: 1;
 }
 
-.navigation__top svg {
+.scroll__to__top svg {
   color: var(--secondary-font-color);
   font-size: 2rem;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
+.scroll__to__top.active svg {
+  transform: rotate(180deg);
+}
 .burger {
   display: none;
   cursor: pointer;
@@ -168,7 +172,7 @@
     z-index: 5;
     padding-right: 10px;
   }
-  .navigation__top {
+  .scroll__to__top {
     display: none;
   }
 

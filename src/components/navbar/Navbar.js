@@ -26,6 +26,14 @@ const Navbar = () => {
     navbarLinks.classList.toggle("active");
   };
 
+  // Scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="navbar">
       <div className="navbar__logo">
@@ -54,11 +62,11 @@ const Navbar = () => {
           <li className="projects link" onClick={addActive}>
             <a href="#projects">
               <span className="link__number">04</span>
-              <span className="link__name">Projects</span>
+              <span className="link__name">My work</span>
             </a>
           </li>
-          <li className="contact link" onClick={addActive}>
-            <a href="#contact">
+          <li className="next link" onClick={addActive}>
+            <a href="#next">
               <span className="link__number">05</span>
               <span className="link__name">What's next ?</span>
             </a>
@@ -70,9 +78,11 @@ const Navbar = () => {
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
-      <div className="navigation__top">
+      <div className="scroll__to__top" onClick={scrollToTop}>
         {/* <span className="material-icons up">south</span> */}
-        <BsArrowDown />
+        <span>
+          <BsArrowDown />
+        </span>
       </div>
     </div>
   );

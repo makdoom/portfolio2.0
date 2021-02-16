@@ -4,12 +4,16 @@ import Navbar from "../navbar/Navbar";
 import About from "../about/About";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
+import Next from "../contact/Next";
 import "./App.css";
 
 const App = () => {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
     const links = document.querySelectorAll(".link");
+    const scrollToTop = document.querySelector(".scroll__to__top");
+    // const next = document.querySelector(".next__page");
+    // console.log(next.offsetTop);
 
     // Listening scroll event
     window.addEventListener("scroll", () => {
@@ -18,9 +22,13 @@ const App = () => {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-
         if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
           current = section.getAttribute("id");
+        }
+
+        scrollToTop.classList.remove("active");
+        if (window.pageYOffset === 5043) {
+          scrollToTop.classList.add("active");
         }
       });
 
@@ -45,6 +53,7 @@ const App = () => {
         <About />
         <Skills />
         <Projects />
+        <Next />
       </div>
     </div>
   );
