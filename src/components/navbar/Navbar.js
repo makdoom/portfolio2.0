@@ -78,8 +78,8 @@ const Navbar = () => {
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
-      <div className="scroll__to__top" onClick={scrollToTop}>
-        <span>
+      <div className="scroll__to__top " onClick={scrollToTop}>
+        <span className="btn">
           <BsArrowDown />
         </span>
       </div>

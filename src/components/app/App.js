@@ -49,7 +49,7 @@ const App = () => {
         // console.log(sectionTop);
 
         scrollToTop.classList.remove("active");
-        if (window.pageYOffset >= 4900) {
+        if (window.pageYOffset >= 4800) {
           scrollToTop.classList.add("active");
         }
       });

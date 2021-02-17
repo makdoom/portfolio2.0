@@ -1,5 +1,5 @@
 .next__page {
-  margin-top: 30vh;
+  margin-top: 20vh;
   height: 100vh;
   min-height: 100vh;
   position: relative;
@@ -56,7 +56,7 @@
 
 footer {
   position: absolute;
-  bottom: 5px;
+  bottom: -2px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
