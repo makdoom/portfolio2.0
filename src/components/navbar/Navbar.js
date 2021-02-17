@@ -35,37 +35,76 @@ const Navbar = () => {
     });
   };
   return (
-    <div className="navbar">
+    <div
+      className="navbar"
+      data-aos="fade-right"
+      data-aos-easing="ease"
+      data-aos-duration="1000"
+    >
       <div className="navbar__logo">
         <img src={logo} className="logo" alt="logo" />
       </div>
       <div className="navbar__links">
         <ul>
-          <li className="intro link active btn" onClick={addActive}>
+          <li
+            className="intro link active btn"
+            onClick={addActive}
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-duration="1000"
+          >
             <a href="#intro">
               <span className="link__number">01</span>
               <span className="link__name">Intro</span>
             </a>
           </li>
-          <li className="about link btn" onClick={addActive}>
+          <li
+            className="about link btn"
+            onClick={addActive}
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
             <a href="#about">
               <span className="link__number">02</span>
               <span className="link__name">About me</span>
             </a>
           </li>
-          <li className="skills link btn" onClick={addActive}>
+          <li
+            className="skills link btn"
+            onClick={addActive}
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
             <a href="#skills">
               <span className="link__number">03</span>
               <span className="link__name">Skills</span>
             </a>
           </li>
-          <li className="projects link btn" onClick={addActive}>
+          <li
+            className="projects link btn"
+            onClick={addActive}
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
             <a href="#projects">
               <span className="link__number">04</span>
               <span className="link__name">My work</span>
             </a>
           </li>
-          <li className="next link btn" onClick={addActive}>
+          <li
+            className="next link btn"
+            onClick={addActive}
+            data-aos="fade-right"
+            data-aos-easing="ease"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
             <a href="#next">
               <span className="link__number">05</span>
               <span className="link__name">What's next ?</span>

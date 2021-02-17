@@ -31,7 +31,13 @@ const About = () => {
         <h1 className="heading">About me</h1>
       </header>
       <div className="about__body">
-        <div className="content">
+        <div
+          className="content"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-easing="ease"
+          data-aos-duration="1200"
+        >
           <p>
             I'm Makdoom Shaikh. I am a self taught{" "}
             <span className="type"></span> <br /> based in Mumbai. Currently i

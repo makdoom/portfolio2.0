@@ -21,7 +21,6 @@ const Skills = () => {
       { label: "Mongodb" },
       { label: "Express" },
       { label: "Mongoose" },
-      { label: "Mongoose" },
       { label: "Git" },
       { label: "GitHub" },
       { label: "npm" },

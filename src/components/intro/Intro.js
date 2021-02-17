@@ -4,7 +4,7 @@ import "./intro.css";
 
 const Intro = () => {
   return (
-    <section id="intro" className="intro__page">
+    <section id="intro" className="intro__page" data-aos="fade-in">
       <div className="signature__background"></div>
       <div className="scroll__down">
         <div className="indicator">
@@ -13,7 +13,13 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className="intro__tagline">
+      <div
+        className="intro__tagline"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
         <img className="hello" src={hello} alt="hello world" />
         <h1 className="quote">
           I want to make things that make a <span>difference</span>

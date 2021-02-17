@@ -118,6 +118,7 @@
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
   animation: animate 6s ease 1 forwards;
+  animation-delay: 1s;
 }
 
 @keyframes animate {

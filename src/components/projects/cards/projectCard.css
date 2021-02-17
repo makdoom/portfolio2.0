@@ -125,6 +125,14 @@
   justify-content: space-between;
 }
 
+.code__links a {
+  transition: all 0.3s ease-in;
+}
+
+.code__links a:hover {
+  color: #fff;
+}
+
 .react-icons {
   color: #bbb;
 }

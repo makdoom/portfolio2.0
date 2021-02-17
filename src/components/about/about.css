@@ -38,7 +38,7 @@
 
 .heading[data-scroll="in"]:before {
   transform: scaleX(0);
-  transition-delay: 0.4s;
+  transition-delay: 0.5s;
 }
 
 .about__body {

@@ -5,9 +5,15 @@ import About from "../about/About";
 import Skills from "../skills/Skills";
 import Projects from "../projects/Projects";
 import Next from "../contact/Next";
+import AOS from "aos";
 import "./App.css";
+import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   useEffect(() => {
     let cursor = document.querySelector(".cursor");
     let cursor2 = document.querySelector(".cursor2");
