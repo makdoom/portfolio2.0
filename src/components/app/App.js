@@ -29,6 +29,8 @@ const App = () => {
   }, []);
   // For scroll event
   useEffect(() => {
+    const footer = document.querySelector(".next__page");
+    console.log(footer.offsetTop);
     const sections = document.querySelectorAll("section");
     const links = document.querySelectorAll(".link");
     const scrollToTop = document.querySelector(".scroll__to__top");
@@ -44,8 +46,10 @@ const App = () => {
           current = section.getAttribute("id");
         }
 
+        // console.log(sectionTop);
+
         scrollToTop.classList.remove("active");
-        if (window.pageYOffset === 5043) {
+        if (window.pageYOffset >= 4900) {
           scrollToTop.classList.add("active");
         }
       });

@@ -65,7 +65,7 @@ const Navbar = () => {
               <span className="link__name">My work</span>
             </a>
           </li>
-          <li className="next link" onClick={addActive}>
+          <li className="next link btn" onClick={addActive}>
             <a href="#next">
               <span className="link__number">05</span>
               <span className="link__name">What's next ?</span>
@@ -79,7 +79,6 @@ const Navbar = () => {
         <div className="line3"></div>
       </div>
       <div className="scroll__to__top" onClick={scrollToTop}>
-        {/* <span className="material-icons up">south</span> */}
         <span>
           <BsArrowDown />
         </span>

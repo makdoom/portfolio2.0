@@ -18,19 +18,19 @@ const Next = () => {
             say hello, I'll try my best to get back to you! Feel free to mail me
             about any relevant job updates.
           </p>
-          <a href="mailto:makshaikh99@gmail.com" className="mail__me">
+          <a href="mailto:makshaikh99@gmail.com" className="mail__me btn">
             Mail me
           </a>
         </div>
       </div>
       <div className="social__links">
-        <span>
+        <span className="btn">
           <VscGithubInverted className="react-icons" />
         </span>
-        <span>
+        <span className="btn">
           <SiTwitter className="react-icons" />
         </span>
-        <span>
+        <span className="btn">
           <FaLinkedinIn className="react-icons" />
         </span>
       </div>
