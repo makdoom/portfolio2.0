@@ -9,11 +9,29 @@ import "./App.css";
 
 const App = () => {
   useEffect(() => {
+    let cursor = document.querySelector(".cursor");
+    let cursor2 = document.querySelector(".cursor2");
+    let btns = document.querySelectorAll(".btn");
+
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.top = cursor2.style.top = e.clientY + "px";
+      cursor.style.left = cursor2.style.left = e.clientX + "px";
+    });
+
+    btns.forEach((btn) => {
+      btn.addEventListener("mouseover", (e) => {
+        cursor.classList.add("grow");
+      });
+      btn.addEventListener("mouseleave", (e) => {
+        cursor.classList.remove("grow");
+      });
+    });
+  }, []);
+  // For scroll event
+  useEffect(() => {
     const sections = document.querySelectorAll("section");
     const links = document.querySelectorAll(".link");
     const scrollToTop = document.querySelector(".scroll__to__top");
-    // const next = document.querySelector(".next__page");
-    // console.log(next.offsetTop);
 
     // Listening scroll event
     window.addEventListener("scroll", () => {
@@ -45,6 +63,8 @@ const App = () => {
 
   return (
     <div className="app" id="#smoothScrolling">
+      <div className="cursor"></div>
+      <div className="cursor2"></div>
       <div className="fixed__navbar">
         <Navbar />
       </div>

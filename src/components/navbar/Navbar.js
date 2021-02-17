@@ -41,25 +41,25 @@ const Navbar = () => {
       </div>
       <div className="navbar__links">
         <ul>
-          <li className="intro link active" onClick={addActive}>
+          <li className="intro link active btn" onClick={addActive}>
             <a href="#intro">
               <span className="link__number">01</span>
               <span className="link__name">Intro</span>
             </a>
           </li>
-          <li className="about link" onClick={addActive}>
+          <li className="about link btn" onClick={addActive}>
             <a href="#about">
               <span className="link__number">02</span>
               <span className="link__name">About me</span>
             </a>
           </li>
-          <li className="skills link" onClick={addActive}>
+          <li className="skills link btn" onClick={addActive}>
             <a href="#skills">
               <span className="link__number">03</span>
               <span className="link__name">Skills</span>
             </a>
           </li>
-          <li className="projects link" onClick={addActive}>
+          <li className="projects link btn" onClick={addActive}>
             <a href="#projects">
               <span className="link__number">04</span>
               <span className="link__name">My work</span>

@@ -25,11 +25,21 @@ const ProjectCard = ({ project }) => {
         <h2>{project.projectName}</h2>
         <p>{project.description}</p>
         <div className="code__links">
-          <a href={project.code} target="_blank" rel="noreferrer">
+          <a
+            href={project.code}
+            className="btn"
+            target="_blank"
+            rel="noreferrer"
+          >
             <ImGithub className="react-icons" />
           </a>
 
-          <a href={project.link} target="_blank" rel="noreferrer">
+          <a
+            href={project.link}
+            className="btn"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiExternalLink className="react-icons" />
           </a>
         </div>

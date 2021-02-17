@@ -5,6 +5,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import "./about.css";
 
 const About = () => {
+  // Custo
+
   useEffect(() => {
     const options = {
       strings: ["Front End Developer", "Programmer", "Web Developer"],
@@ -38,7 +40,7 @@ const About = () => {
             who don't have any Computer Science degree such as people that have
             either taught themselves or have gone to bootcamps, to know more
             about me feel free to download my Resume. <br />
-            <a href="#resume" className="resume">
+            <a href="#resume" className="resume btn">
               <span>Resume</span>
               <IoIosArrowForward />
             </a>
