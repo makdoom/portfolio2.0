@@ -1,0 +1,64 @@
+.main {
+  height: 100%;
+  display: flex;
+}
+
+.fixed__navbar {
+  position: fixed;
+  height: 100vh;
+  width: 12%;
+}
+
+.main__body {
+  margin-left: 12%;
+  width: 88%;
+}
+
+.cursor {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+  transform-origin: 100% 100%;
+  mix-blend-mode: difference;
+  z-index: 5;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.cursor.grow {
+  transform: scale(1.8);
+  background: #fff;
+  border: none;
+}
+.cursor.grow ~ .cursor2 {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .fixed__navbar {
+    z-index: 3;
+    width: 100%;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__body {
+    margin-left: 0;
+    width: 100%;
+  }
+}

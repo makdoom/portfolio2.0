@@ -1,0 +1,32 @@
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.svg__loader {
+  animation: fill 0.5s ease forwards 4.6s;
+}
+
+.svg__loader > path {
+  stroke-dasharray: 1017px;
+  stroke-dashoffset: 1017px;
+  animation: line 7s ease forwards;
+}
+
+@keyframes line {
+  to {
+    stroke-dashoffset: 0;
+    stroke: transparent;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: url(#gradient);
+    /* fill: white; */
+  }
+}
