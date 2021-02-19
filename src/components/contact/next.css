@@ -72,6 +72,10 @@ footer > p > span {
 }
 
 @media only screen and (max-width: 768px) {
+  html:not(.no-js) [data-aos^="zoom"][data-aos^="zoom"] {
+    opacity: 1 !important;
+    /* font-size: 1.8rem !important; */
+  }
   .next__page {
     padding-top: 8vh;
   }
@@ -93,7 +97,7 @@ footer > p > span {
   }
 
   .social__links {
-    top: 91%;
+    top: 90%;
     right: 50%;
     transform: translate(50%, -50%);
     flex-direction: row;

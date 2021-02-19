@@ -15,7 +15,7 @@ const Intro = () => {
 
       <div
         className="intro__tagline"
-        data-aos="fade-up"
+        data-aos="zoom-in"
         data-aos-easing="ease"
         data-aos-delay="200"
         data-aos-duration="1000"

@@ -12,15 +12,16 @@ const projectData = [
 
   {
     projectId: "02",
+    projectName: "Foodie App",
     sequence: "even",
-    projectName: "Password Manager",
     description:
-      "A fullstack(MERN) Password Manager app with user Authentication using JWT, Where you can store all your credentials. ",
+      "A simple Food Recipe app in reactjs which fetch the recipes from an API and render it on the UI.",
     imgurl:
-      "https://cdn.dribbble.com/users/2460645/screenshots/14114678/media/845307079d1b64e36a6ef911296ec669.png",
-    link: "https://passwordsmanager.herokuapp.com/",
-    code: "https://github.com/makdoom/password-manager",
+      "https://cdn.dribbble.com/users/1818193/screenshots/9851127/media/0ed8bfb1f829a8e7854728f666660ee2.jpg",
+    link: "https://makdoom.github.io/foodieapp/#/",
+    code: "https://github.com/makdoom/foodieapp",
   },
+
   {
     projectId: "03",
     projectName: "Netflix Clone",
@@ -44,13 +45,13 @@ const projectData = [
   },
   {
     projectId: "05",
-    projectName: "Foodie App",
+    projectName: "Password Manager",
     description:
-      "A simple Food Recipe app in reactjs which fetch the recipes from an API and render it on the UI.",
+      "A fullstack(MERN) Password Manager app with user Authentication using JWT, Where you can store all your credentials. ",
     imgurl:
-      "https://cdn.dribbble.com/users/1818193/screenshots/9851127/media/0ed8bfb1f829a8e7854728f666660ee2.jpg",
-    link: "https://makdoom.github.io/foodieapp/#/",
-    code: "https://github.com/makdoom/foodieapp",
+      "https://cdn.dribbble.com/users/2460645/screenshots/14114678/media/845307079d1b64e36a6ef911296ec669.png",
+    link: "https://passwordsmanager.herokuapp.com/",
+    code: "https://github.com/makdoom/password-manager",
   },
 ];
 

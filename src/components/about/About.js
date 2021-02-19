@@ -33,10 +33,9 @@ const About = () => {
       <div className="about__body">
         <div
           className="content"
-          data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos="zoom-in"
           data-aos-easing="ease"
-          data-aos-duration="1200"
+          data-aos-duration="1000"
         >
           <p>
             I'm Makdoom Shaikh. I am a self taught{" "}
@@ -52,7 +51,14 @@ const About = () => {
             </a>
           </p>
         </div>
-        <div className="image">image</div>
+        <div
+          className="image"
+          data-aos="zoom-in"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
+          image
+        </div>
       </div>
     </section>
   );

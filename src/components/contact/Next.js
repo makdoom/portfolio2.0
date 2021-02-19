@@ -11,7 +11,12 @@ const Next = () => {
         <h1 className="heading">What's next ?</h1>
       </header>
       <div className="next__body">
-        <div className="touch__container">
+        <div
+          className="touch__container"
+          data-aos="zoom-in-down"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <h2>Get in touch</h2>
           <p>
             My inbox is always open. Whether you have a question or just want to
@@ -24,13 +29,30 @@ const Next = () => {
         </div>
       </div>
       <div className="social__links">
-        <span className="btn">
+        <span
+          className="btn"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          data-aos-easing="ease"
+        >
           <VscGithubInverted className="react-icons" />
         </span>
-        <span className="btn">
+        <span
+          className="btn"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <SiTwitter className="react-icons" />
         </span>
-        <span className="btn">
+        <span
+          className="btn"
+          data-aos="zoom-in"
+          data-aos-delay="600"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <FaLinkedinIn className="react-icons" />
         </span>
       </div>

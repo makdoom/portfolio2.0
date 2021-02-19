@@ -5,7 +5,12 @@ import "./projectCard.css";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className={`card ${project.sequence && "even"}`}>
+    <div
+      className={`card ${project.sequence && "even"}`}
+      data-aos="zoom-in-down"
+      data-aos-easing="ease"
+      data-aos-duration="1000"
+    >
       <div className="card__left">
         <div className="card__container">
           <div className="image__box">

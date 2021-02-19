@@ -62,7 +62,12 @@ const Skills = () => {
         <header>
           <h1 className="heading">Skills</h1>
         </header>
-        <p className="text">
+        <p
+          className="text"
+          data-aos="zoom-in"
+          data-aos-easing="ease"
+          data-aos-duration="1200"
+        >
           I have strong knowledge in HTML5, CSS3, SASS, JavaScript. I can work
           with <span>React, Redux, Nodejs </span>etc. I am also good with{" "}
           <span>Monogodb, Express, Bootstrap & Version Control (git).</span> I
@@ -72,7 +77,13 @@ const Skills = () => {
         </p>
       </div>
       <div className="skills__globe">
-        <div id="globe__canvas" className="globe__canvas"></div>
+        <div
+          id="globe__canvas"
+          className="globe__canvas"
+          data-aos="zoom-in"
+          data-aos-easing="ease"
+          data-aos-duration="1200"
+        ></div>
       </div>
     </section>
   );
