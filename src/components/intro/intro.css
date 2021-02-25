@@ -11,9 +11,9 @@
 .signature__background {
   position: absolute;
   top: 0;
-  width: 50%;
+  width: 20%;
   height: 100vh;
-  background: #1b1b1b;
+  background: #111111;
   z-index: -1;
   right: 0;
 }

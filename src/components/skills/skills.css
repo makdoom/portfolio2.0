@@ -59,7 +59,9 @@
   }
 
   .skills__content .text {
-    margin-left: 1rem;
+    margin: 0 1rem;
+    /* padding: 0.5rem; */
+    text-align: justify;
     font-size: 1rem;
   }
 

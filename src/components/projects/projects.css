@@ -16,8 +16,8 @@
 
 @media only screen and (max-width: 768px) {
   .projects__page {
-    margin-top: 20vh;
-    padding-top: 5vh;
+    margin-top: 15vh;
+    padding-top: 10vh;
     min-height: 100vh;
     width: 100%;
   }

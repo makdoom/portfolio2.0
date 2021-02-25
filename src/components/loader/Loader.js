@@ -8,12 +8,7 @@ const Loader = ({ loading }) => {
     }, 5800);
   }, [loading]);
   return (
-    <div
-      className="loader"
-      data-aos="zoom-in"
-      data-aos-easing="ease"
-      data-aos-duration="1200"
-    >
+    <div className="loader">
       <svg
         className="svg__loader"
         width="162"
@@ -24,8 +19,8 @@ const Loader = ({ loading }) => {
       >
         <defs>
           <linearGradient id="gradient">
-            <stop offset="5%" stop-color="#EB04FF" />
-            <stop offset="95%" stop-color="#FF4F00" />
+            <stop offset="5%" stopColor="#EB04FF" />
+            <stop offset="95%" stopColor="#FF4F00" />
           </linearGradient>
         </defs>
         <path

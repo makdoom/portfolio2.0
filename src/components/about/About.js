@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ScrollOut from "scroll-out";
 import Typed from "typed.js";
 import { IoIosArrowForward } from "react-icons/io";
+import profile from "../../assets/profile.png";
 import "./about.css";
 
 const About = () => {
@@ -27,6 +28,15 @@ const About = () => {
 
   return (
     <section id="about" className="about__page">
+      <img
+        className="profile"
+        src={profile}
+        alt="profile__image"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-delay="400"
+        data-aos-duration="1000"
+      />
       <header>
         <h1 className="heading">About me</h1>
       </header>
@@ -51,14 +61,13 @@ const About = () => {
             </a>
           </p>
         </div>
-        <div
+        {/* <div
           className="image"
-          data-aos="zoom-in"
+          data-aos="fade-up"
           data-aos-easing="ease"
           data-aos-duration="1000"
-        >
-          image
-        </div>
+        > */}
+        {/* </div> */}
       </div>
     </section>
   );

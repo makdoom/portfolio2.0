@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
       className={`card ${project.sequence && "even"}`}
       data-aos="zoom-in-down"
       data-aos-easing="ease"
-      data-aos-duration="1000"
+      data-aos-duration="1500"
     >
       <div className="card__left">
         <div className="card__container">

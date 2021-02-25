@@ -42,7 +42,7 @@ const Skills = () => {
       radius: "85%",
       radiusMin: 75,
       bgDraw: true,
-      bgColor: "#141414",
+      bgColor: "#000",
       opacityOver: 2.0,
       opacityOut: 0.05,
       opacitySpeed: 1,

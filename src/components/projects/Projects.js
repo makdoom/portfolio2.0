@@ -4,7 +4,6 @@ import projectData from "./projectData";
 import "./projects.css";
 
 const Projects = () => {
-  console.log(projectData);
   return (
     <section id="projects" className="projects__page">
       <header>
