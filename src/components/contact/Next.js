@@ -35,7 +35,14 @@ const Next = () => {
           data-aos-delay="400"
           data-aos-easing="ease"
         >
-          <VscGithubInverted className="react-icons" />
+          <a
+            className="link"
+            href="https://github.com/makdoom"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <VscGithubInverted className="react-icons" />
+          </a>
         </span>
         <span
           className="btn"
@@ -44,7 +51,14 @@ const Next = () => {
           data-aos-easing="ease"
           data-aos-duration="1000"
         >
-          <SiTwitter className="react-icons" />
+          <a
+            className="link"
+            href="https://twitter.com/shaikh_makdoom"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SiTwitter className="react-icons" />
+          </a>
         </span>
         <span
           className="btn"
@@ -53,7 +67,14 @@ const Next = () => {
           data-aos-easing="ease"
           data-aos-duration="1000"
         >
-          <FaLinkedinIn className="react-icons" />
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/makdoom-shaikh-42897a172/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaLinkedinIn className="react-icons" />
+          </a>
         </span>
       </div>
       <footer>

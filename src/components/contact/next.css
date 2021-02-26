@@ -49,6 +49,10 @@
   padding: 20px;
 }
 
+.social__links .link {
+  font-size: 1.5rem;
+}
+
 .social__links > span > .react-icons {
   font-size: 1.5rem;
   cursor: pointer;
@@ -72,6 +76,9 @@ footer > p > span {
 }
 
 @media only screen and (max-width: 768px) {
+  html:not(.no-js) [data-aos^="zoom"][data-aos^="zoom"] {
+    opacity: 1 !important;
+  }
   .next__page {
     padding-top: 8vh;
   }

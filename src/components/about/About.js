@@ -3,6 +3,7 @@ import ScrollOut from "scroll-out";
 import Typed from "typed.js";
 import { IoIosArrowForward } from "react-icons/io";
 import profile from "../../assets/profile.png";
+import resume from "./Resume.pdf";
 import "./about.css";
 
 const About = () => {
@@ -55,7 +56,12 @@ const About = () => {
             who don't have any Computer Science degree such as people that have
             either taught themselves or have gone to bootcamps, to know more
             about me feel free to download my Resume. <br />
-            <a href="#resume" className="resume btn">
+            <a
+              href={resume}
+              target="_blank"
+              className="resume btn"
+              rel="noreferrer"
+            >
               <span>Resume</span>
               <IoIosArrowForward />
             </a>

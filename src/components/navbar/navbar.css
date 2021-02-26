@@ -154,6 +154,11 @@
     background: var(--primary-background-color);
   }
 
+  .navbar::after {
+    width: 0px;
+    height: 0vh;
+  }
+
   .navbar__links {
     background: var(--primary-background-color);
     position: absolute;
