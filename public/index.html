@@ -17,12 +17,25 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <script></script>
     <title>Makdoom Shaikh | Front End Developer</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", async () => {
+          try {
+            const register = await navigator.serviceWorker.register(
+              "./serviceWorker.js"
+            );
+          } catch (error) {
+            console.log("Failure", error);
+          }
+        });
+      }
+    </script>
   </body>
 </html>
