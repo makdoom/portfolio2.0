@@ -1,6 +1,25 @@
 const projectData = [
   {
     projectId: "01",
+    projectName: "Twitter 2.0",
+    description:
+      "Redesigned and developed Twitter with functionality like tweet, comment, like, delete tweet etc using React, TailwindCSS, and Firebase",
+    imgurl: "https://i.ibb.co/C2ZJfD7/twitter2-0.jpg",
+    link: "https://twitter2-7e92e.web.app/",
+    code: "https://github.com/makdoom/twitter-2.0",
+  },
+  {
+    projectId: "02",
+    sequence: "even",
+    projectName: "Shareme",
+    description:
+      "Shareme is a FullStack Photo Sharing social media application created using React, TailwindCSS & Sanity",
+    imgurl: "https://i.ibb.co/sWrsQ9Z/SHAREME.jpg",
+    link: "https://shareme-33.netlify.app/",
+    code: "https://github.com/makdoom/shareme",
+  },
+  {
+    projectId: "03",
     projectName: "WhatsApp Clone",
     description:
       "As the name suggests this is the whatsapp clone app where user can create rooms and chat with each other.",
@@ -11,19 +30,8 @@ const projectData = [
   },
 
   {
-    projectId: "02",
-    projectName: "Foodie App",
+    projectId: "04",
     sequence: "even",
-    description:
-      "A simple Food Recipe app in reactjs which fetch the recipes from an API and render it on the UI.",
-    imgurl:
-      "https://cdn.dribbble.com/users/1818193/screenshots/9851127/media/0ed8bfb1f829a8e7854728f666660ee2.jpg",
-    link: "https://makdoom.github.io/foodieapp/#/",
-    code: "https://github.com/makdoom/foodieapp",
-  },
-
-  {
-    projectId: "03",
     projectName: "Netflix Clone",
     description:
       "This is a frontend replica of Netflix created using React.js and react-router.",
@@ -33,8 +41,7 @@ const projectData = [
     code: "https://github.com/makdoom/netflix-clone",
   },
   {
-    projectId: "04",
-    sequence: "even",
+    projectId: "05",
     projectName: "Expense Tracker",
     description:
       "An Expense Tracker App which keeps track of your incomes and expenses created in React.js using context API and useReducer.",
@@ -44,7 +51,9 @@ const projectData = [
     code: "https://github.com/makdoom/expense-tracker",
   },
   {
-    projectId: "05",
+    projectId: "06",
+    sequence: "even",
+
     projectName: "Password Manager",
     description:
       "A fullstack(MERN) Password Manager app with user Authentication using JWT, Where you can store all your credentials. ",
